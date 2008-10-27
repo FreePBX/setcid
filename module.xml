@@ -1,0 +1,21 @@
+<module>
+	<rawname>setcid</rawname>
+	<name>Set CallerID</name>
+	<version>2.5.0</version>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<description>
+		Adds the ability to change the CallerID within a call flow.
+	</description>
+	<menuitems>
+		<setcid>Set CallerID</setcid>
+	</menuitems>
+	<changelog>
+		*2.5.0* First release of module
+	</changelog>
+	<depends>
+		<version>2.5.0</version>
+	</depends>
+	<location>release/setcid-2.5.0.tgz</location>
+	<md5sum>7a3380ae3e2b705ebbb60fa8456da192</md5sum>
+</module>
