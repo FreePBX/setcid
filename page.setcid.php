@@ -56,7 +56,8 @@ switch ($action) {
 echo '<li><a href="config.php?display=setcid&amp;type='.$type.'">'._('Add CallerID').'</a></li>';
 
 foreach (setcid_list() as $row) {
-	echo '<li><a href="config.php?display=setcid&amp;type='.$type.'&amp;extdisplay='.$row['cid_id'].'" class="">'.$row['description'].'</a></li>';
+	echo '<li><a href="config.php?display=setcid&amp;type='.$type.'&amp;extdisplay='.$row['cid_id'].'" class="rnavdata" rnavdata="'.$row['description'].','.$row['cid_name'].','.$row['cid_num'].','.$row['dest'].'">'.$row['description'].'</a></li>';
+
 }
 
 ?>
@@ -82,6 +83,7 @@ if ($extdisplay) {
 
 $helptext = _("Set CallerID allows you to change the caller id of the call and then continue on to the desired destination. For example, you may want to change the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the text you enter is what the callerid is changed to. To append to the current callerid, use the proper asterisk variables, such as \"\${CALLERID(name)}\" for the currently set callerid name and \"\${CALLERID(num)}\" for the currently set callerid number.");
 echo $helptext;
+echo $row['dest'];
 ?>
 
 <form name="editSetcid" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkSetcid(editSetcid);">
@@ -96,9 +98,9 @@ echo $helptext;
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("CallerID Name")?>:<span><?php echo _("The CallerID Name that you want to change to. If you are appending to the current callerid, dont forget to include the appropriate asterisk variables. If you leave this box blank, the CallerID name will be blanked");?></span></a></td>
-		<td><input size="14" type="text" name="cid_name" value="<?php echo $cid_name; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
+		<td><input size="30" type="text" name="cid_name" value="<?php echo $cid_name; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
     <td><a href="#" class="info"><?php echo _("CallerID Number")?>:<span><?php echo _("The CallerID Number that you want to change to. If you are appending to the current callerid, dont forget to include the appropriate asterisk variables. If you leave this box blank, the CallerID number will be blanked");?></span></a></td>
-		<td><input size="14" type="text" name="cid_num" value="<?php echo $cid_num; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
+		<td><input size="30" type="text" name="cid_num" value="<?php echo $cid_num; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination")?>:<hr></h5></td></tr>
 
 <?php 
@@ -129,6 +131,28 @@ echo drawselects($dest,0);
 
 <script language="javascript">
 <!--
+$(document).ready(function () {
+
+  if (!$('[name=description]').attr("value")) {
+  $('[name=cid_name]').attr({value: "${CALLERID(name)}"});
+  $('[name=cid_num]').attr({value: "${CALLERID(num)}"});
+    }
+    
+ // select rnav options - fake type = edit
+ /*
+  $("a.rnavdata").click(function(event){
+  event.preventDefault();
+  linktext = $(this).text();
+  rnavdata = $(this).attr("rnavdata");
+  arr = rnavdata.split(",");
+  $('h2').text("<?php echo _("Edit") ?>: " + arr[0]);
+	$('[name=description]').attr({value: arr[0]});
+  $('[name=cid_name]').attr({value: arr[1]});
+  $('[name=cid_num]').attr({value: arr[2]});
+  });
+  */
+});
+
 
 function checkSetcid(theForm) {
 	var msgInvalidDescription = "<?php echo _('Invalid description specified'); ?>";
