@@ -3,7 +3,7 @@
 	<name>Set CallerID</name>
 	<version>2.5.0</version>
 	<type>setup</type>
-	<category>Internal Options &amp; Configuration</category>
+	<category>Third Party Addon</category>
 	<description>
 		Adds the ability to change the CallerID within a call flow.
 	</description>
