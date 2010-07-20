@@ -1,44 +1,5 @@
 <?php
 
-function setcid_destinations() {
-	global $module_page;
-	$extens = array();
-
-	// it makes no sense to point at another callerid (and it can be an infinite loop)
-	if ($module_page == 'setcid') {
-		return false;
-	}
-
-	// return an associative array with destination and description
-	foreach (setcid_list() as $row) {
-		$extens[] = array('destination' => 'app-setcid,' . $row['cid_id'] . ',1', 'description' => $row['description']);
-	}
-	return $extens;
-}
-
-function setcid_getdest($exten) {
-	return array('app-setcid,'.$exten.',1');
-}
-
-function setcid_getdestinfo($dest) {
-	global $active_modules;
-
-	if (substr(trim($dest),0,14) == 'app-setcid,') {
-		$exten = explode(',',$dest);
-		$exten = $exten[1];
-		$thisexten = setcid_get($exten);
-		if (empty($thisexten)) {
-			return array();
-		} else {
-			$type = isset($active_modules['setcid']['type'])?$active_modules['setcid']['type']:'setup';
-			return array('description' => 'Callerid_name : '.$thisexten['description'],
-			             'edit_url' => 'config.php?display=setcid&type='.$type.'&extdisplay='.urlencode($exten),
-								  );
-		}
-	} else {
-		return false;
-	}
-}
 
 function setcid_get_config($engine) {
 	global $ext;
@@ -46,7 +7,7 @@ function setcid_get_config($engine) {
 		case 'asterisk':
 			$ext->addInclude('from-internal-additional', 'app-setcid');
 			foreach (setcid_list() as $row) {
-					$ext->add('app-setcid',$row['cid_id'], '', new ext_noop('Changing Callerid from ${CALLERID(all)} to CALLERID(name): '.$row['cid_name'].', CALLERID(num): '. $row['cid_num'].'; ('.$row['description'].')'));
+					$ext->add('app-setcid',$row['cid_id'], '', new ext_noop('('.$row['description'].') Changing cid to '.$row['cid_name'].' <'. $row['cid_num'].'>'));
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_set('CALLERID(name)', $row['cid_name']));
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_set('CALLERID(num)', $row['cid_num']));
           $ext->add('app-setcid',$row['cid_id'], '', new ext_goto($row['dest']));
@@ -65,6 +26,22 @@ function setcid_list() {
 		die_freepbx($results->getMessage()."<br><br>Error selecting from setcid");	
 	}
 	return $results;
+}
+
+function setcid_destinations() {
+	global $module_page;
+	$extens = array();
+
+	// it makes no sense to point at another callerid (and it can be an infinite loop)
+	if ($module_page == 'setcid') {
+		return false;
+	}
+
+	// return an associative array with destination and description
+	foreach (setcid_list() as $row) {
+		$extens[] = array('destination' => 'app-setcid,' . $row['cid_id'] . ',1', 'description' => $row['description']);
+	}
+	return $extens;
 }
 
 function setcid_get($cid_id) {
@@ -114,6 +91,11 @@ function setcid_edit($cid_id, $description, $cid_name, $cid_num, $dest) {
 	}
 }
 
+
+
+//----------------------------------------------------------------------------
+// Dynamic Destination Registry and Recordings Registry Functions
+
 function setcid_check_destinations($dest=true) {
 	global $active_modules;
 
@@ -121,23 +103,46 @@ function setcid_check_destinations($dest=true) {
 	if (is_array($dest) && empty($dest)) {
 		return $destlist;
 	}
-	$sql = "SELECT cid_id, dest, description FROM setcid ";
+	$sql = "SELECT cid_id, description FROM setcid ";
 	if ($dest !== true) {
-		$sql .= "WHERE dest in ('".implode("','",$dest)."')";
+		$sql .= "WHERE cid_id in ('".implode("','",$dest)."')";
 	}
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 
 	$type = isset($active_modules['setcid']['type'])?$active_modules['setcid']['type']:'setup';
 
 	foreach ($results as $result) {
-		$thisdest = $result['dest'];
+		$thisdest = $result['description'];
 		$thisid   = $result['cid_id'];
 		$destlist[] = array(
 			'dest' => $thisdest,
-			'description' => 'CallerID Change: '.$result['description'],
-			'edit_url' => 'config.php?display=setcid&type='.$type.'&extdisplay='.urlencode($thisid),
+			'description' => 'Set CallerID: '.$result['description'],
+			'edit_url' => 'config.php?display=setcid&type=tool&id='.urlencode($thisid),
 		);
 	}
 	return $destlist;
 }
+
+function setcid_getdest($id) {
+	return array("app-setcid,$id,1");
+}
+
+function setcid_getdestinfo($dest) {dbug('$thiscid',$dest);
+	if (substr(trim($dest),0,10) == 'app-setcid,') {
+		$grp = explode(',',$dest);
+		$id = $grp[1];
+		$thiscid = setcid_get($id);
+		dbug('$thiscid',$grp);
+		if (empty($thiscid)) {
+			return array();
+		} else {
+			return array('description' => sprintf(_("Set CallerID %s: "),$thiscid['description']),
+			             'edit_url' => 'config.php?display=setcid&id='.urlencode($id),
+								  );
+		}
+	} else {
+		return false;
+	}
+}
+
 ?>

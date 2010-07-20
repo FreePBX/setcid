@@ -77,6 +77,16 @@ if ($extdisplay) {
 	$dest      = $row['dest'];
 
 	echo "<h2>"._("Edit: ")."$description ($cid_name)"."</h2>";
+
+		$usage_list = framework_display_destination_usage(setcid_getdest($extdisplay));
+		if (!empty($usage_list)) {
+		?>
+			<tr><td colspan="2">
+			<a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
+			</td></tr><br /><br />
+		<?php
+		}
+
 } else {
 	echo "<h2>"._("Add CallerID")."</h2>";
 }
@@ -84,6 +94,9 @@ if ($extdisplay) {
 $helptext = _("Set CallerID allows you to change the caller id of the call and then continue on to the desired destination. For example, you may want to change the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the text you enter is what the callerid is changed to. To append to the current callerid, use the proper asterisk variables, such as \"\${CALLERID(name)}\" for the currently set callerid name and \"\${CALLERID(num)}\" for the currently set callerid number.");
 echo $helptext;
 echo $row['dest'];
+
+
+
 ?>
 
 <form name="editSetcid" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkSetcid(editSetcid);">
@@ -113,18 +126,6 @@ echo drawselects($dest,0);
 			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
 		</td>		
 
-		<?php
-		if ($extdisplay) {
-			$usage_list = framework_display_destination_usage(setcid_getdest($extdisplay));
-			if (!empty($usage_list)) {
-			?>
-				<tr><td colspan="2">
-				<a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
-				</td></tr>
-			<?php
-			}
-		}
-		?>
 	</tr>
 </table>
 </form>
