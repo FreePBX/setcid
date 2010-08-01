@@ -17,6 +17,6 @@
 	<depends>
 		<version>2.5.0</version>
 	</depends>
-	<location>contributed_modules/release/setcid-2.5.0.tgz</location>
-	<md5sum>a3994a12dd642a33b0b0cbdd57f6af14</md5sum>
+	<location>contributed_modules/release/setcid-2.8.0.tgz</location>
+	<md5sum>2d823976e93cefe6f06d918983c5ff18</md5sum>
 </module>
