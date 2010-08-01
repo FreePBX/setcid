@@ -103,7 +103,7 @@ function setcid_check_destinations($dest=true) {
 	if (is_array($dest) && empty($dest)) {
 		return $destlist;
 	}
-	$sql = "SELECT cid_id, description FROM setcid ";
+	$sql = "SELECT cid_id, description, dest FROM setcid ";
 	if ($dest !== true) {
 		$sql .= "WHERE cid_id in ('".implode("','",$dest)."')";
 	}
@@ -112,7 +112,7 @@ function setcid_check_destinations($dest=true) {
 	$type = isset($active_modules['setcid']['type'])?$active_modules['setcid']['type']:'setup';
 
 	foreach ($results as $result) {
-		$thisdest = $result['description'];
+		$thisdest = $result['dest'];
 		$thisid   = $result['cid_id'];
 		$destlist[] = array(
 			'dest' => $thisdest,
@@ -128,7 +128,7 @@ function setcid_getdest($id) {
 }
 
 function setcid_getdestinfo($dest) {dbug('$thiscid',$dest);
-	if (substr(trim($dest),0,10) == 'app-setcid,') {
+	if (substr(trim($dest),0,11) == 'app-setcid,') {
 		$grp = explode(',',$dest);
 		$id = $grp[1];
 		$thiscid = setcid_get($id);
