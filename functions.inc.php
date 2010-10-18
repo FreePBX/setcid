@@ -127,7 +127,7 @@ function setcid_getdest($id) {
 	return array("app-setcid,$id,1");
 }
 
-function setcid_getdestinfo($dest) {dbug('$thiscid',$dest);
+function setcid_getdestinfo($dest) {
 	if (substr(trim($dest),0,11) == 'app-setcid,') {
 		$grp = explode(',',$dest);
 		$id = $grp[1];
