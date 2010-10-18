@@ -1,7 +1,7 @@
 <module>
 	<rawname>setcid</rawname>
 	<name>Set CallerID</name>
-	<version>2.8.0</version>
+	<version>2.8.1</version>
 	<type>setup</type>
 	<category>Third Party Addon</category>
 	<description>
@@ -11,12 +11,13 @@
 		<setcid>Set CallerID</setcid>
 	</menuitems>
 	<changelog>
+		*2.8.1* Remove debug leftover
 		*2.8.0* #4284, #4316
 		*2.5.0* First release of module
 	</changelog>
 	<depends>
 		<version>2.5.0</version>
 	</depends>
-	<location>contributed_modules/release/setcid-2.8.0.tgz</location>
-	<md5sum>2d823976e93cefe6f06d918983c5ff18</md5sum>
+	<location>contributed_modules/release/setcid-2.8.1.tgz</location>
+	<md5sum>2843e1b9ace644f1f73458a4790a9555</md5sum>
 </module>
