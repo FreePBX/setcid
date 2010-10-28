@@ -132,7 +132,6 @@ function setcid_getdestinfo($dest) {
 		$grp = explode(',',$dest);
 		$id = $grp[1];
 		$thiscid = setcid_get($id);
-		dbug('$thiscid',$grp);
 		if (empty($thiscid)) {
 			return array();
 		} else {
