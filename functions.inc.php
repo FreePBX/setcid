@@ -5,7 +5,6 @@ function setcid_get_config($engine) {
 	global $ext;
 	switch ($engine) {
 		case 'asterisk':
-			$ext->addInclude('from-internal-additional', 'app-setcid');
 			foreach (setcid_list() as $row) {
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_noop('('.$row['description'].') Changing cid to '.$row['cid_name'].' <'. $row['cid_num'].'>'));
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_set('CALLERID(name)', $row['cid_name']));
