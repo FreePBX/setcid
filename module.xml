@@ -12,6 +12,7 @@
 		<setcid>Set CallerID</setcid>
 	</menuitems>
 	<changelog>
+		*2.9.0.1* #4606
 		*2.9.0.0* 2.9 version moved to repo
 		*2.8.2* #4609
 		*2.8.1* Remove debug leftover
@@ -21,6 +22,6 @@
 	<depends>
 		<version>2.5.0</version>
 	</depends>
-	<location>contributed_modules/release/setcid-2.8.2.tgz</location>
-	<md5sum>54a499feb49459627a4b9536f5ddd4db</md5sum>
+	<location>release/2.9/setcid-2.9.0.1.tgz</location>
+	<md5sum>846978791a8bc8fa5c89d2664ff9e933</md5sum>
 </module>
