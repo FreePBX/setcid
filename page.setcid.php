@@ -69,12 +69,12 @@ foreach (setcid_list() as $row) {
 
 if ($extdisplay) {
 	// load
-	$row			= setcid_get($extdisplay);
-	
-	$description	= $row['description'];
-	$cid_name		= $row['cid_name'];
-	$cid_num		= $row['cid_num'];
-	$dest			= $row['dest'];
+	$row = setcid_get($extdisplay);
+	dbug('$row', $row);
+	$description = $row['description'];
+	$cid_name   = htmlspecialchars($row['cid_name']);
+	$cid_num   = htmlspecialchars($row['cid_num']);
+	$dest      = $row['dest'];
 
 	echo "<h2>"._("Edit: ")."$description ($cid_name)"."</h2>";
 
@@ -93,7 +93,7 @@ if ($extdisplay) {
 
 $helptext = _("Set CallerID allows you to change the caller id of the call and then continue on to the desired destination. For example, you may want to change the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the text you enter is what the callerid is changed to. To append to the current callerid, use the proper asterisk variables, such as \"\${CALLERID(name)}\" for the currently set callerid name and \"\${CALLERID(num)}\" for the currently set callerid number.");
 echo $helptext;
-echo isset($row['dest']) ? $row['dest'] : '';
+echo $row['dest'];
 
 
 
@@ -111,9 +111,9 @@ echo isset($row['dest']) ? $row['dest'] : '';
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("CallerID Name")?>:<span><?php echo _("The CallerID Name that you want to change to. If you are appending to the current callerid, dont forget to include the appropriate asterisk variables. If you leave this box blank, the CallerID name will be blanked");?></span></a></td>
-		<td><input size="30" type="text" name="cid_name" value="<?php echo htmlentities($cid_name); ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
+		<td><input size="30" type="text" name="cid_name" value="<?php echo $cid_name; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
     <td><a href="#" class="info"><?php echo _("CallerID Number")?>:<span><?php echo _("The CallerID Number that you want to change to. If you are appending to the current callerid, dont forget to include the appropriate asterisk variables. If you leave this box blank, the CallerID number will be blanked");?></span></a></td>
-		<td><input size="30" type="text" name="cid_num" value="<?php echo htmlentities($cid_num); ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
+		<td><input size="30" type="text" name="cid_num" value="<?php echo $cid_num; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination")?>:<hr></h5></td></tr>
 
 <?php 

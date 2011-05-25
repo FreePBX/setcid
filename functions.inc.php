@@ -5,11 +5,12 @@ function setcid_get_config($engine) {
 	global $ext;
 	switch ($engine) {
 		case 'asterisk':
+			$ext->addInclude('from-internal-additional', 'app-setcid');
 			foreach (setcid_list() as $row) {
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_noop('('.$row['description'].') Changing cid to '.$row['cid_name'].' <'. $row['cid_num'].'>'));
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_set('CALLERID(name)', $row['cid_name']));
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_set('CALLERID(num)', $row['cid_num']));
-          $ext->add('app-setcid',$row['cid_id'], '', new ext_goto($row['dest']));
+          			$ext->add('app-setcid',$row['cid_id'], '', new ext_goto($row['dest']));
 			}
 		break;
 	}
@@ -21,7 +22,7 @@ function setcid_list() {
 	global $db;
 	$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid ORDER BY description ";
 	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-	if(DB::IsError($results)) {
+	if($db->IsError($results)) {
 		die_freepbx($results->getMessage()."<br><br>Error selecting from setcid");	
 	}
 	return $results;
@@ -47,7 +48,7 @@ function setcid_get($cid_id) {
 	global $db;
 	$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid WHERE cid_id = ".$db->escapeSimple($cid_id);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
-	if(DB::IsError($row)) {
+	if($db->IsError($row)) {
 		die_freepbx($row->getMessage()."<br><br>Error selecting row from setcid");	
 	}
 	
@@ -62,7 +63,7 @@ function setcid_add($description, $cid_name, $cid_num, $dest) {
 		"'".$db->escapeSimple($cid_num)."', ".
 		"'".$db->escapeSimple($dest)."')";
 	$result = $db->query($sql);
-	if(DB::IsError($result)) {
+	if($db->IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
 }
@@ -71,7 +72,7 @@ function setcid_delete($cid_id) {
 	global $db;
 	$sql = "DELETE FROM setcid WHERE cid_id = ".$db->escapeSimple($cid_id);
 	$result = $db->query($sql);
-	if(DB::IsError($result)) {
+	if($db->IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
 }
@@ -85,7 +86,7 @@ function setcid_edit($cid_id, $description, $cid_name, $cid_num, $dest) {
 		"dest = '".$db->escapeSimple($dest)."' ".
 		"WHERE cid_id = ".$db->escapeSimple($cid_id);
 	$result = $db->query($sql);
-	if(DB::IsError($result)) {
+	if($db->IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
 }

@@ -2,7 +2,7 @@
 	<rawname>setcid</rawname>
 	<repo>unsupported</repo>
 	<name>Set CallerID</name>
-	<version>2.9.0.1</version>
+	<version>2.9.0.2</version>
 	<type>setup</type>
 	<category>Third Party Addon</category>
 	<description>
@@ -12,6 +12,7 @@
 		<setcid>Set CallerID</setcid>
 	</menuitems>
 	<changelog>
+		*2.9.0.2* #5180
 		*2.9.0.1* #4606
 		*2.9.0.0* 2.9 version moved to repo
 		*2.8.2* #4609
