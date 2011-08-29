@@ -1,10 +1,9 @@
 <module>
 	<rawname>setcid</rawname>
-	<repo>unsupported</repo>
+	<repo>standard</repo>
 	<name>Set CallerID</name>
 	<version>2.9.0.2</version>
-	<type>setup</type>
-	<category>Third Party Addon</category>
+	<category>Apps</category>
 	<description>
 		Adds the ability to change the CallerID within a call flow.
 	</description>
@@ -15,10 +14,6 @@
 		*2.9.0.2* #5180
 		*2.9.0.1* #4606
 		*2.9.0.0* 2.9 version moved to repo
-		*2.8.2* #4609
-		*2.8.1* Remove debug leftover
-		*2.8.0* #4284, #4316
-		*2.5.0* First release of module
 	</changelog>
 	<depends>
 		<version>2.5.0</version>

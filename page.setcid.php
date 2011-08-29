@@ -48,8 +48,6 @@ switch ($action) {
 }
 
 ?> 
-</div>
-
 <div class="rnav"><ul>
 <?php 
 
@@ -62,9 +60,6 @@ foreach (setcid_list() as $row) {
 
 ?>
 </ul></div>
-
-<div class="content">
-
 <?php
 
 if ($extdisplay) {
