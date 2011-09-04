@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-10 22:46+0100\n"
+"POT-Creation-Date: 2011-09-04 18:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,9 +30,6 @@ msgstr ""
 
 #, php-format
 msgid "Set CallerID %s: "
-msgstr ""
-
-msgid "Migrating Name/Num filed size"
 msgstr ""
 
 msgid "Add CallerID"
@@ -95,4 +92,13 @@ msgid "Edit"
 msgstr ""
 
 msgid "Invalid description specified"
+msgstr ""
+
+msgid "Set CallerID"
+msgstr ""
+
+msgid "Apps"
+msgstr ""
+
+msgid "Adds the ability to change the CallerID within a call flow."
 msgstr ""
