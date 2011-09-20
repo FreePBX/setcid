@@ -3,7 +3,7 @@
 	<repo>standard</repo>
 	<name>Set CallerID</name>
 	<version>2.9.0.2</version>
-	<category>Apps</category>
+	<category>Applications</category>
 	<description>
 		Adds the ability to change the CallerID within a call flow.
 	</description>
