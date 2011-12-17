@@ -1,4 +1,5 @@
 <?php 
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 /*
  * Copyright 2008 by Moshe Brevda mbrevda=>gmail[com]
  * 
