@@ -22,6 +22,6 @@
 	<depends>
 		<version>2.5.0</version>
 	</depends>
-	<location>release/2.11/setcid-2.11.0.0.tgz</location>
-	<md5sum>80bd34237faa6235a889822b23f8e7bb</md5sum>
+	<location>release/2.11/setcid-2.11.0.1.tgz</location>
+	<md5sum>97c4ecdafb9b1d4deaf792f05420545f</md5sum>
 </module>
