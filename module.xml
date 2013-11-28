@@ -21,4 +21,4 @@
 	</depends>
 	<location>release/2.10/setcid-2.10.0.0.tgz</location>
 	<md5sum>143e29f72fe58a0964ad8cd9018f4297</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
