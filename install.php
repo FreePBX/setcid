@@ -20,6 +20,3 @@ foreach ($sql as $q) {
 		die_freepbx("Can not create setcid table\n");
 	}
 }
-
-
-?>
