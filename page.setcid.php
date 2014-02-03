@@ -66,7 +66,6 @@ foreach (setcid_list() as $row) {
 if ($extdisplay) {
 	// load
 	$row = setcid_get($extdisplay);
-	dbug('$row', $row);
 	$description = $row['description'];
 	$cid_name   = htmlspecialchars($row['cid_name']);
 	$cid_num   = htmlspecialchars($row['cid_num']);

@@ -1,17 +1,18 @@
 <module>
-  <rawname>setcid</rawname>
-  <repo>standard</repo>
-  <name>Set CallerID</name>
-  <version>2.11.0.1</version>
-  <category>Applications</category>
-  <publisher>Schmoozecom.com</publisher>
-  <description>
+	<rawname>setcid</rawname>
+	<repo>standard</repo>
+	<name>Set CallerID</name>
+	<version>2.11.0.2</version>
+	<category>Applications</category>
+	<publisher>Schmoozecom.com</publisher>
+	<description>
 		Adds the ability to change the CallerID within a call flow.
 	</description>
-  <menuitems>
-    <setcid>Set CallerID</setcid>
-  </menuitems>
-  <changelog>
+	<menuitems>
+		<setcid>Set CallerID</setcid>
+	</menuitems>
+	<changelog>
+		*2.11.0.2* Cleanup dbug statements
 		*2.11.0.1* Fixes #6740
 		*2.11.0.0* bump version
 		*2.10.0.0* new version changes
@@ -19,12 +20,12 @@
 		*2.9.0.1* #4606
 		*2.9.0.0* 2.9 version moved to repo
 	</changelog>
-  <depends>
-    <version>2.5.0</version>
-  </depends>
-  <location>release/2.11/setcid-2.11.0.1.tgz</location>
-  <md5sum>97c4ecdafb9b1d4deaf792f05420545f</md5sum>
-  <supported>
-    <version>2.10</version>
-  </supported>
+	<depends>
+		<version>2.5.0</version>
+	</depends>
+	<supported>
+		<version>2.10</version>
+	</supported>
+	<location>release/2.11/setcid-2.11.0.1.tgz</location>
+	<md5sum>97c4ecdafb9b1d4deaf792f05420545f</md5sum>
 </module>
