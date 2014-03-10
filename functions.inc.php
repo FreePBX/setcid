@@ -25,7 +25,7 @@ function setcid_list() {
 	$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid ORDER BY description ";
 	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if($db->IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from setcid");	
+		die_freepbx($results->getMessage()."<br><br>Error selecting from setcid");
 	}
 	return $results;
 }
@@ -51,9 +51,9 @@ function setcid_get($cid_id) {
 	$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid WHERE cid_id = ".$db->escapeSimple($cid_id);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	if($db->IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from setcid");	
+		die_freepbx($row->getMessage()."<br><br>Error selecting row from setcid");
 	}
-	
+
 	return $row;
 }
 
@@ -79,7 +79,7 @@ function setcid_delete($cid_id) {
 	}
 }
 
-function setcid_edit($cid_id, $description, $cid_name, $cid_num, $dest) { 
+function setcid_edit($cid_id, $description, $cid_name, $cid_num, $dest) {
 	global $db;
 	$sql = "UPDATE setcid SET ".
 		"description = '".$db->escapeSimple($description)."', ".
@@ -107,7 +107,7 @@ function setcid_check_destinations($dest=true) {
 	}
 	$sql = "SELECT cid_id, description, dest FROM setcid ";
 	if ($dest !== true) {
-		$sql .= "WHERE cid_id in ('".implode("','",$dest)."')";
+		$sql .= "WHERE dest in ('".implode("','",$dest)."')";
 	}
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 
