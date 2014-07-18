@@ -1,9 +1,9 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 $type = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'setup';
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] :  '';
-if (isset($_REQUEST['delete'])) $action = 'delete'; 
+if (isset($_REQUEST['delete'])) $action = 'delete';
 
 $cid_id = isset($_REQUEST['cid_id']) ? $_REQUEST['cid_id'] :  false;
 $description = isset($_REQUEST['description']) ? $_REQUEST['description'] :  '';
@@ -33,9 +33,9 @@ switch ($action) {
 	break;
 }
 
-?> 
+?>
 <div class="rnav"><ul>
-<?php 
+<?php
 
 echo '<li><a href="config.php?display=setcid&amp;type='.$type.'">'._('Add CallerID').'</a></li>';
 
@@ -79,7 +79,7 @@ echo $row['dest'];
 
 ?>
 
-<form name="editSetcid" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkSetcid(editSetcid);">
+<form name="editSetcid" action="" method="post" onsubmit="return checkSetcid(editSetcid);">
 	<input type="hidden" name="extdisplay" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="cid_id" value="<?php echo $extdisplay; ?>">
 	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add'); ?>">
@@ -96,15 +96,15 @@ echo $row['dest'];
 		<td><input size="30" type="text" name="cid_num" value="<?php echo $cid_num; ?>"  tabindex="<?php echo ++$tabindex;?>"/></td> </tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination")?>:<hr></h5></td></tr>
 
-<?php 
+<?php
 //draw goto selects
 echo drawselects($dest,0);
 ?>
-			
+
 	<tr>
 		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 			<?php if ($extdisplay) { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-		</td>		
+		</td>
 
 	</tr>
 </table>
@@ -118,7 +118,7 @@ $(document).ready(function () {
   $('[name=cid_name]').attr({value: "${CALLERID(name)}"});
   $('[name=cid_num]').attr({value: "${CALLERID(num)}"});
     }
-    
+
  // select rnav options - fake type = edit
  /*
   $("a.rnavdata").click(function(event){
@@ -142,7 +142,7 @@ function checkSetcid(theForm) {
 	setDestinations(theForm, '_post_dest');
 
 	// form validation
-	defaultEmptyOK = false;	
+	defaultEmptyOK = false;
 	if (isEmpty(theForm.description.value))
 		return warnInvalid(theForm.description, msgInvalidDescription);
 
