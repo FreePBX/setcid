@@ -1,11 +1,15 @@
-# FreePBX language template
-# Copyright 2013 Schmooze Com Inc
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for setcid
+# Copyright (C) 2008-2015 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 20:00-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,16 +17,70 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: page.setcid.php:40
+#: page.setcid.php:71
+msgid "Add CallerID"
+msgstr ""
+
+#: page.setcid.php:87
+msgid "Add CallerID Instance"
+msgstr ""
+
+#: setcid.i18n.php:5
+msgid "Adds the ability to change the CallerID within a call flow."
+msgstr ""
+
+#: setcid.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: page.setcid.php:93
+msgid "CallerID Name"
+msgstr ""
+
+#: page.setcid.php:95
+msgid "CallerID Number"
+msgstr ""
+
+#: page.setcid.php:106
+msgid "Delete"
+msgstr ""
+
+#: page.setcid.php:89
+msgid "Description"
+msgstr ""
+
+#: page.setcid.php:97
+msgid "Destination"
+msgstr ""
+
+#: page.setcid.php:129
+msgid "Edit"
+msgstr ""
+
+#: page.setcid.php:87
+msgid "Edit CallerID Instance"
+msgstr ""
+
+#: page.setcid.php:59
+msgid "Edit: "
+msgstr ""
+
+#: page.setcid.php:139
+msgid "Invalid description specified"
+msgstr ""
+
+#: setcid.i18n.php:3
+#: setcid.i18n.php:6
+msgid "Set CallerID"
+msgstr ""
+
+#: functions.inc.php:142
 #, php-format
 msgid "Set CallerID %s: "
 msgstr ""
 
-msgid "Add CallerID"
-msgstr ""
-
-msgid "Edit: "
-msgstr ""
-
+#: page.setcid.php:74
 msgid ""
 "Set CallerID allows you to change the caller id of the call and then "
 "continue on to the desired destination. For example, you may want to change "
@@ -33,57 +91,25 @@ msgid ""
 "currently set callerid number."
 msgstr ""
 
-msgid "Edit CallerID Instance"
+#: page.setcid.php:105
+msgid "Submit Changes"
 msgstr ""
 
-msgid "Add CallerID Instance"
-msgstr ""
-
-msgid "Description"
-msgstr ""
-
-msgid ""
-"The descriptive name of this CallerID instance. For example \"new name here\""
-msgstr ""
-
-msgid "CallerID Name"
-msgstr ""
-
+#: page.setcid.php:93
 msgid ""
 "The CallerID Name that you want to change to. If you are appending to the "
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID name will be blanked"
 msgstr ""
 
-msgid "CallerID Number"
-msgstr ""
-
+#: page.setcid.php:95
 msgid ""
 "The CallerID Number that you want to change to. If you are appending to the "
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID number will be blanked"
 msgstr ""
 
-msgid "Destination"
-msgstr ""
-
-msgid "Submit Changes"
-msgstr ""
-
-msgid "Delete"
-msgstr ""
-
-msgid "Edit"
-msgstr ""
-
-msgid "Invalid description specified"
-msgstr ""
-
-msgid "Set CallerID"
-msgstr ""
-
-msgid "Applications"
-msgstr ""
-
-msgid "Adds the ability to change the CallerID within a call flow."
+#: page.setcid.php:89
+msgid ""
+"The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""
