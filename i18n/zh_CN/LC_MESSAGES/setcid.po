@@ -13,70 +13,71 @@ msgstr ""
 "PO-Revision-Date: 2015-02-20 20:00-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: page.setcid.php:40 page.setcid.php:71
 msgid "Add CallerID"
-msgstr ""
+msgstr "添加来电显示"
 
 #: page.setcid.php:87
 msgid "Add CallerID Instance"
-msgstr ""
+msgstr "添加来电显示实体"
 
 #: setcid.i18n.php:5
 msgid "Adds the ability to change the CallerID within a call flow."
-msgstr ""
+msgstr "添加修改来电显示策略"
 
 #: setcid.i18n.php:4
 msgid "Applications"
-msgstr ""
+msgstr "应用"
 
 #: page.setcid.php:93
 msgid "CallerID Name"
-msgstr ""
+msgstr "CallerID 名称"
 
 #: page.setcid.php:95
 msgid "CallerID Number"
-msgstr ""
+msgstr "CallerID号码"
 
 #: page.setcid.php:106
 msgid "Delete"
-msgstr ""
+msgstr "删除"
 
 #: page.setcid.php:89
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: page.setcid.php:97
 msgid "Destination"
-msgstr ""
+msgstr "描述"
 
 #: page.setcid.php:129
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: page.setcid.php:87
 msgid "Edit CallerID Instance"
-msgstr ""
+msgstr "编辑来电显示实体"
 
 #: page.setcid.php:59
 msgid "Edit: "
-msgstr ""
+msgstr "毕竟"
 
 #: page.setcid.php:139
 msgid "Invalid description specified"
-msgstr ""
+msgstr "指定了无效的描述"
 
 #: setcid.i18n.php:3 setcid.i18n.php:6
 msgid "Set CallerID"
-msgstr ""
+msgstr "设置CallerID"
 
 #: functions.inc.php:142
 #, php-format
 msgid "Set CallerID %s: "
-msgstr ""
+msgstr "设置来电显示 %s:"
 
 #: page.setcid.php:74
 msgid ""
@@ -88,10 +89,14 @@ msgid ""
 "for the currently set callerid name and \"${CALLERID(num)}\" for the "
 "currently set callerid number."
 msgstr ""
+"设置 CallerID 允许修改呼叫的Caller ID，发送此修改后的号码到目的地。例如，用户可以修改 caller id  \"John Doe\" "
+"到 \"Sales: John Doe\"。 请注意，用户输入的文本是希望设置的callerid。如果附加当前的callerid，使用正确的 "
+"asterisk 变量来处理，例如 \"${CALLERID(name)}\" 设置当前Callerid名称和\"${CALLERID(num)}\""
+"设置当前的 callerid 号码。"
 
 #: page.setcid.php:105
 msgid "Submit Changes"
-msgstr ""
+msgstr "提交修改"
 
 #: page.setcid.php:93
 msgid ""
