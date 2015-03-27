@@ -59,7 +59,7 @@ msgstr "Destino"
 
 #: page.setcid.php:129
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: page.setcid.php:87
 msgid "Edit CallerID Instance"
