@@ -39,11 +39,11 @@ msgstr "Aplicaciones"
 
 #: page.setcid.php:93
 msgid "CallerID Name"
-msgstr ""
+msgstr "Nombre Llamante"
 
 #: page.setcid.php:95
 msgid "CallerID Number"
-msgstr ""
+msgstr "Número Llamante"
 
 #: page.setcid.php:106
 msgid "Delete"
