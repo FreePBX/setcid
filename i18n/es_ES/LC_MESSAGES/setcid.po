@@ -10,13 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 20:00-0500\n"
-"PO-Revision-Date: 2015-02-20 20:00-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-03-26 01:08+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/setcid/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.setcid.php:40 page.setcid.php:71
 msgid "Add CallerID"
@@ -32,7 +35,7 @@ msgstr ""
 
 #: setcid.i18n.php:4
 msgid "Applications"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: page.setcid.php:93
 msgid "CallerID Name"
@@ -44,15 +47,15 @@ msgstr ""
 
 #: page.setcid.php:106
 msgid "Delete"
-msgstr ""
+msgstr "Borrar"
 
 #: page.setcid.php:89
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: page.setcid.php:97
 msgid "Destination"
-msgstr ""
+msgstr "Destino"
 
 #: page.setcid.php:129
 msgid "Edit"
@@ -64,11 +67,11 @@ msgstr ""
 
 #: page.setcid.php:59
 msgid "Edit: "
-msgstr ""
+msgstr "Editar "
 
 #: page.setcid.php:139
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Descripción especificada Invalida"
 
 #: setcid.i18n.php:3 setcid.i18n.php:6
 msgid "Set CallerID"
@@ -92,7 +95,7 @@ msgstr ""
 
 #: page.setcid.php:105
 msgid "Submit Changes"
-msgstr ""
+msgstr "Enviar Cambios"
 
 #: page.setcid.php:93
 msgid ""
