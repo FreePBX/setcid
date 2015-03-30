@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 20:00-0500\n"
-"PO-Revision-Date: 2015-03-27 12:02+0200\n"
+"PO-Revision-Date: 2015-03-30 08:13+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/es_ES/>\n"
@@ -47,7 +47,7 @@ msgstr "Número Llamante"
 
 #: page.setcid.php:106
 msgid "Delete"
-msgstr "Borrar"
+msgstr "Eliminar"
 
 #: page.setcid.php:89
 msgid "Description"
