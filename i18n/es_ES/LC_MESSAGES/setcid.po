@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 20:00-0500\n"
-"PO-Revision-Date: 2015-03-30 08:13+0200\n"
+"PO-Revision-Date: 2015-03-31 08:48+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/es_ES/>\n"
@@ -23,15 +23,17 @@ msgstr ""
 
 #: page.setcid.php:40 page.setcid.php:71
 msgid "Add CallerID"
-msgstr ""
+msgstr "Agregar ID de llamada"
 
 #: page.setcid.php:87
 msgid "Add CallerID Instance"
-msgstr ""
+msgstr "Agregar Instancia de ID llamada"
 
 #: setcid.i18n.php:5
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr ""
+"Añade la posibilidad de cambiar el identificador de llamadas dentro de un "
+"flujo de llamadas."
 
 #: setcid.i18n.php:4
 msgid "Applications"
@@ -63,7 +65,7 @@ msgstr "Editar"
 
 #: page.setcid.php:87
 msgid "Edit CallerID Instance"
-msgstr ""
+msgstr "Editar Instancia de ID de llamada"
 
 #: page.setcid.php:59
 msgid "Edit: "
@@ -75,12 +77,12 @@ msgstr "Descripción especificada Invalida"
 
 #: setcid.i18n.php:3 setcid.i18n.php:6
 msgid "Set CallerID"
-msgstr ""
+msgstr "Configurar ID de llamada"
 
 #: functions.inc.php:142
 #, php-format
 msgid "Set CallerID %s: "
-msgstr ""
+msgstr "Configurar ID de llamada %s: "
 
 #: page.setcid.php:74
 msgid ""
@@ -92,6 +94,14 @@ msgid ""
 "for the currently set callerid name and \"${CALLERID(num)}\" for the "
 "currently set callerid number."
 msgstr ""
+"Establecer CallerID le permite cambiar el identificador de llamadas de la "
+"llamada y luego continuar con el destino deseado. Por ejemplo, es posible "
+"que desee cambiar la forma de identificación de llamadas \"John Doe\" a \""
+"Ventas: John Doe\". Tenga en cuenta que el texto que introduce es lo que el "
+"identificador de llamadas se cambia. Para añadir al callerid actual, utilice "
+"las variables propias de Asterisk, como \"$ {CALLERID (name)}\" para el "
+"nombre de identificador de llamadas establecido actualmente y \"$ {CALLERID "
+"(num)}\" para el número identificador de llamadas establecido actualmente."
 
 #: page.setcid.php:105
 msgid "Submit Changes"
@@ -103,6 +113,10 @@ msgid ""
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID name will be blanked"
 msgstr ""
+"El nombre de identificador de llamadas que desea cambiar. Si está realizando "
+"adiciones a la callerid actual, no se olvide de incluir las variables "
+"Asterisk apropiados. Si deja este cuadro en blanco, el nombre de "
+"identificación de llamadas se pondrá en blanco"
 
 #: page.setcid.php:95
 msgid ""
@@ -110,8 +124,14 @@ msgid ""
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID number will be blanked"
 msgstr ""
+"El número de identificación de llamadas que desea cambiar. Si está "
+"realizando adiciones a la callerid actual, no se olvide de incluir las "
+"variables Asterisk apropiadas. Si deja este cuadro en blanco, el número de "
+"identificación de llamadas se pondrá en blanco"
 
 #: page.setcid.php:89
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""
+"El nombre descriptivo de esta instancia de ID de llamada. Por ejemplo \""
+"nuevo nombre aca\""
