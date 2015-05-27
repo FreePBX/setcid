@@ -9,77 +9,106 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:00-0500\n"
+"POT-Creation-Date: 2015-05-27 15:52-0400\n"
 "PO-Revision-Date: 2015-02-20 20:00-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 
-#: page.setcid.php:40 page.setcid.php:71
+#: views/grid.php:22
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:12
+msgid "Add"
+msgstr ""
+
+#: views/form.php:2
+msgid "Add CID"
+msgstr ""
+
+#: page.setcid.php:42 page.setcid.php:73
 msgid "Add CallerID"
 msgstr "添加来电显示"
 
-#: page.setcid.php:87
+#: page.setcid.php:89
 msgid "Add CallerID Instance"
 msgstr "添加来电显示实体"
 
-#: setcid.i18n.php:5
+#: views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr "添加修改来电显示策略"
 
-#: setcid.i18n.php:4
-msgid "Applications"
-msgstr "应用"
-
-#: page.setcid.php:93
+#: page.setcid.php:95 views/form.php:34
 msgid "CallerID Name"
 msgstr "CallerID 名称"
 
-#: page.setcid.php:95
+#: page.setcid.php:97 views/form.php:54
 msgid "CallerID Number"
 msgstr "CallerID号码"
 
-#: page.setcid.php:106
+#: Setcid.class.php:113 page.setcid.php:108 views/grid.php:14
 msgid "Delete"
 msgstr "删除"
 
-#: page.setcid.php:89
+#: page.setcid.php:91 views/form.php:14 views/grid.php:21
 msgid "Description"
 msgstr "描述"
 
-#: page.setcid.php:97
+#: page.setcid.php:99 views/form.php:74
 msgid "Destination"
 msgstr "描述"
 
-#: page.setcid.php:129
+#: views/form.php:84
+msgid "Destination to send the call to after CID has been processed"
+msgstr ""
+
+#: page.setcid.php:131
 msgid "Edit"
 msgstr "编辑"
 
-#: page.setcid.php:87
+#: views/form.php:2
+#, php-format
+msgid "Edit CID: %s"
+msgstr ""
+
+#: page.setcid.php:89
 msgid "Edit CallerID Instance"
 msgstr "编辑来电显示实体"
 
-#: page.setcid.php:59
+#: page.setcid.php:61
 msgid "Edit: "
 msgstr "毕竟"
 
-#: page.setcid.php:139
+#: views/grid.php:20
+msgid "ID"
+msgstr ""
+
+#: page.setcid.php:141
 msgid "Invalid description specified"
 msgstr "指定了无效的描述"
 
-#: setcid.i18n.php:3 setcid.i18n.php:6
-msgid "Set CallerID"
-msgstr "设置CallerID"
+#: views/main.php:11
+msgid "List CIDs"
+msgstr ""
 
-#: functions.inc.php:142
+#: Setcid.class.php:118
+msgid "Reset"
+msgstr ""
+
+#: views/main.php:4
+msgid "Set CID"
+msgstr ""
+
+#: functions.inc.php:103
 #, php-format
 msgid "Set CallerID %s: "
 msgstr "设置来电显示 %s:"
 
-#: page.setcid.php:74
+#: page.setcid.php:76
 msgid ""
 "Set CallerID allows you to change the caller id of the call and then "
 "continue on to the desired destination. For example, you may want to change "
@@ -89,30 +118,45 @@ msgid ""
 "for the currently set callerid name and \"${CALLERID(num)}\" for the "
 "currently set callerid number."
 msgstr ""
-"设置 CallerID 允许修改呼叫的Caller ID，发送此修改后的号码到目的地。例如，用户可以修改 caller id  \"John Doe\" "
-"到 \"Sales: John Doe\"。 请注意，用户输入的文本是希望设置的callerid。如果附加当前的callerid，使用正确的 "
-"asterisk 变量来处理，例如 \"${CALLERID(name)}\" 设置当前Callerid名称和\"${CALLERID(num)}\""
-"设置当前的 callerid 号码。"
+"设置 CallerID 允许修改呼叫的Caller ID，发送此修改后的号码到目的地。例如，用户"
+"可以修改 caller id  \"John Doe\" 到 \"Sales: John Doe\"。 请注意，用户输入的"
+"文本是希望设置的callerid。如果附加当前的callerid，使用正确的 asterisk 变量来"
+"处理，例如 \"${CALLERID(name)}\" 设置当前Callerid名称和\"${CALLERID(num)}\"设"
+"置当前的 callerid 号码。"
 
-#: page.setcid.php:105
+#: Setcid.class.php:123
+msgid "Submit"
+msgstr ""
+
+#: page.setcid.php:107
 msgid "Submit Changes"
 msgstr "提交修改"
 
-#: page.setcid.php:93
+#: page.setcid.php:95
 msgid ""
 "The CallerID Name that you want to change to. If you are appending to the "
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID name will be blanked"
 msgstr ""
 
-#: page.setcid.php:95
+#: page.setcid.php:97
 msgid ""
 "The CallerID Number that you want to change to. If you are appending to the "
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID number will be blanked"
 msgstr ""
 
-#: page.setcid.php:89
+#: page.setcid.php:91 views/form.php:24 views/form.php:44 views/form.php:64
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""
+
+#: views/grid.php:4
+msgid "What is Set CID?"
+msgstr ""
+
+#~ msgid "Applications"
+#~ msgstr "应用"
+
+#~ msgid "Set CallerID"
+#~ msgstr "设置CallerID"

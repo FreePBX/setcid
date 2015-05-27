@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 20:00-0500\n"
+"POT-Creation-Date: 2015-05-27 15:52-0400\n"
 "PO-Revision-Date: 2014-02-21 01:02+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://192.168.30.85/projects/freepbx/setcid/ja/>\n"
@@ -48,68 +48,97 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: page.setcid.php:40 page.setcid.php:71
+#: views/grid.php:22
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:12
+msgid "Add"
+msgstr ""
+
+#: views/form.php:2
+msgid "Add CID"
+msgstr ""
+
+#: page.setcid.php:42 page.setcid.php:73
 msgid "Add CallerID"
 msgstr "発信者IDの追加"
 
-#: page.setcid.php:87
+#: page.setcid.php:89
 msgid "Add CallerID Instance"
 msgstr "発信者IDインスタンスの追加"
 
-#: setcid.i18n.php:5
+#: views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr "コールフローの機能を追加して発信者IDの変更を可能にする"
 
-#: setcid.i18n.php:4
-msgid "Applications"
-msgstr "アプリケーション"
-
-#: page.setcid.php:93
+#: page.setcid.php:95 views/form.php:34
 msgid "CallerID Name"
 msgstr "CallerID Name"
 
-#: page.setcid.php:95
+#: page.setcid.php:97 views/form.php:54
 msgid "CallerID Number"
 msgstr "CallerID番号"
 
-#: page.setcid.php:106
+#: Setcid.class.php:113 page.setcid.php:108 views/grid.php:14
 msgid "Delete"
 msgstr "削除"
 
-#: page.setcid.php:89
+#: page.setcid.php:91 views/form.php:14 views/grid.php:21
 msgid "Description"
 msgstr "説明"
 
-#: page.setcid.php:97
+#: page.setcid.php:99 views/form.php:74
 msgid "Destination"
 msgstr "宛先"
 
-#: page.setcid.php:129
+#: views/form.php:84
+msgid "Destination to send the call to after CID has been processed"
+msgstr ""
+
+#: page.setcid.php:131
 msgid "Edit"
 msgstr "編集"
 
-#: page.setcid.php:87
+#: views/form.php:2
+#, php-format
+msgid "Edit CID: %s"
+msgstr ""
+
+#: page.setcid.php:89
 msgid "Edit CallerID Instance"
 msgstr "発信者IDインスタンスの編集"
 
-#: page.setcid.php:59
+#: page.setcid.php:61
 msgid "Edit: "
 msgstr "編集"
 
-#: page.setcid.php:139
+#: views/grid.php:20
+msgid "ID"
+msgstr ""
+
+#: page.setcid.php:141
 msgid "Invalid description specified"
 msgstr "無効な説明が指定されました"
 
-#: setcid.i18n.php:3 setcid.i18n.php:6
-msgid "Set CallerID"
-msgstr "発信者IDの設定"
+#: views/main.php:11
+msgid "List CIDs"
+msgstr ""
 
-#: functions.inc.php:142
+#: Setcid.class.php:118
+msgid "Reset"
+msgstr ""
+
+#: views/main.php:4
+msgid "Set CID"
+msgstr ""
+
+#: functions.inc.php:103
 #, php-format
 msgid "Set CallerID %s: "
 msgstr "発信者IDに%sを設定しました"
 
-#: page.setcid.php:74
+#: page.setcid.php:76
 msgid ""
 "Set CallerID allows you to change the caller id of the call and then "
 "continue on to the desired destination. For example, you may want to change "
@@ -126,11 +155,15 @@ msgstr ""
 "ている発信者IDに追加する場合\"${CALLERID(名前)}\"、使用している発信者ID番号に"
 "追加する場合\"${CALLERID(num)}\"で設定します。"
 
-#: page.setcid.php:105
+#: Setcid.class.php:123
+msgid "Submit"
+msgstr ""
+
+#: page.setcid.php:107
 msgid "Submit Changes"
 msgstr "変更を適用"
 
-#: page.setcid.php:93
+#: page.setcid.php:95
 msgid ""
 "The CallerID Name that you want to change to. If you are appending to the "
 "current callerid, dont forget to include the appropriate asterisk variables. "
@@ -140,7 +173,7 @@ msgstr ""
 "入れてください。もしこのボックスを空欄にする場合、発信者ID名も空欄になりま"
 "す。 "
 
-#: page.setcid.php:95
+#: page.setcid.php:97
 msgid ""
 "The CallerID Number that you want to change to. If you are appending to the "
 "current callerid, dont forget to include the appropriate asterisk variables. "
@@ -150,7 +183,17 @@ msgstr ""
 "を入れてください。もしこのボックスを空欄にする場合、発信者ID番号も空欄になり"
 "ます。 "
 
-#: page.setcid.php:89
+#: page.setcid.php:91 views/form.php:24 views/form.php:44 views/form.php:64
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr "発信者IDインスタンスの詳細。例：\"new name here\""
+
+#: views/grid.php:4
+msgid "What is Set CID?"
+msgstr ""
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
+
+#~ msgid "Set CallerID"
+#~ msgstr "発信者IDの設定"
