@@ -14,7 +14,7 @@ function setcid_get_config($engine) {
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_noop('('.$row['description'].') Changing cid to '.$row['cid_name'].' <'. $row['cid_num'].'>'));
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_set('CALLERID(name)', $row['cid_name']));
 					$ext->add('app-setcid',$row['cid_id'], '', new ext_set('CALLERID(num)', $row['cid_num']));
-          			$ext->add('app-setcid',$row['cid_id'], '', new ext_goto($row['dest']));
+					$ext->add('app-setcid',$row['cid_id'], '', new ext_goto($row['dest']));
 			}
 		break;
 	}
@@ -23,13 +23,7 @@ function setcid_get_config($engine) {
 /**  Get a list of all cid
  */
 function setcid_list() {
-	global $db;
-	$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid ORDER BY description ";
-	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-	if($db->IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from setcid");
-	}
-	return $results;
+	return FreePBX::Setcid()->getAll();
 }
 
 function setcid_destinations() {
@@ -49,53 +43,20 @@ function setcid_destinations() {
 }
 
 function setcid_get($cid_id) {
-	global $db;
-	$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid WHERE cid_id = ".$db->escapeSimple($cid_id);
-	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
-	if($db->IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from setcid");
-	}
-
-	return $row;
+	return FreePBX::Setcid()->get($cid_id);
 }
 
 function setcid_add($description, $cid_name, $cid_num, $dest) {
-	global $db;
-	$sql = "INSERT INTO setcid (description, cid_name, cid_num, dest) VALUES (".
-		"'".$db->escapeSimple($description)."', ".
-		"'".$db->escapeSimple($cid_name)."', ".
-		"'".$db->escapeSimple($cid_num)."', ".
-		"'".$db->escapeSimple($dest)."')";
-	$result = $db->query($sql);
-	if($db->IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+	return FreePBX::Setcid()->update(null, $description, $cid_name, $cid_num, $dest);
 }
 
 function setcid_delete($cid_id) {
-	global $db;
-	$sql = "DELETE FROM setcid WHERE cid_id = ".$db->escapeSimple($cid_id);
-	$result = $db->query($sql);
-	if($db->IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+	return FreePBX::Setcid()->delete($cid_id);
 }
 
 function setcid_edit($cid_id, $description, $cid_name, $cid_num, $dest) {
-	global $db;
-	$sql = "UPDATE setcid SET ".
-		"description = '".$db->escapeSimple($description)."', ".
-		"cid_name = '".$db->escapeSimple($cid_name)."', ".
-		"cid_num = '".$db->escapeSimple($cid_num)."', ".
-		"dest = '".$db->escapeSimple($dest)."' ".
-		"WHERE cid_id = ".$db->escapeSimple($cid_id);
-	$result = $db->query($sql);
-	if($db->IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+	return FreePBX::Setcid()->update($cid_id, $description, $cid_name, $cid_num, $dest);
 }
-
-
 
 //----------------------------------------------------------------------------
 // Dynamic Destination Registry and Recordings Registry Functions
