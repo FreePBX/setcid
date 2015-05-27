@@ -2,7 +2,7 @@
 	<rawname>setcid</rawname>
 	<repo>standard</repo>
 	<name>Set CallerID</name>
-	<version>2.11.0.4</version>
+	<version>13.0.1alpha1</version>
 	<category>Applications</category>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
@@ -14,6 +14,7 @@
 		<setcid>Set CallerID</setcid>
 	</menuitems>
 	<changelog>
+		*13.0.1alpha1* Updates for visuals in 13
 		*2.11.0.4* Update license file
 		*2.11.0.3* #7211
 		*2.11.0.2* Cleanup dbug statements
@@ -28,7 +29,7 @@
 		<version>2.5.0</version>
 	</depends>
 	<supported>
-		<version>2.10</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/setcid-2.11.0.1.tgz</location>
 	<md5sum>97c4ecdafb9b1d4deaf792f05420545f</md5sum>
