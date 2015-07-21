@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 20:00-0500\n"
-"PO-Revision-Date: 2015-04-25 00:18+0200\n"
+"PO-Revision-Date: 2015-07-21 16:27+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/ru_RU/>\n"
@@ -38,11 +38,11 @@ msgstr "Приложения"
 
 #: page.setcid.php:93
 msgid "CallerID Name"
-msgstr "CallerID Имя"
+msgstr "Имя CallerID"
 
 #: page.setcid.php:95
 msgid "CallerID Number"
-msgstr "CallerID номер"
+msgstr "Номер CallerID"
 
 #: page.setcid.php:106
 msgid "Delete"
