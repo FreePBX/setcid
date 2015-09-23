@@ -139,21 +139,8 @@ msgid "Set CallerID %s: "
 msgstr "発信者IDに%sを設定しました"
 
 #: page.setcid.php:76
-msgid ""
-"Set CallerID allows you to change the caller id of the call and then "
-"continue on to the desired destination. For example, you may want to change "
-"the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the "
-"text you enter is what the callerid is changed to. To append to the current "
-"callerid, use the proper asterisk variables, such as \"${CALLERID(name)}\" "
-"for the currently set callerid name and \"${CALLERID(num)}\" for the "
-"currently set callerid number."
-msgstr ""
-"発信者IDの設定によって発信者番号の発信者IDを変えることができ、次に進む場所を"
-"指定することできます。例：発信者の名前を\"John Doe\"から\"Sales: John Doe\"に"
-"変更する。注意：入力されたテキストが最終的に変換される名前になります。使用し"
-"ている発信者IDに追加する場合、正確なasterisk変数を使ってください。例：使用し"
-"ている発信者IDに追加する場合\"${CALLERID(名前)}\"、使用している発信者ID番号に"
-"追加する場合\"${CALLERID(num)}\"で設定します。"
+msgid "Set CallerID allows you to change the caller id of the call and then continue on to the desired destination. For example, you may want to change the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the text you enter is what the callerid is changed to. To append to the current callerid, use the proper asterisk variables, such as \"${CALLERID(name)}\" for the currently set callerid name and \"${CALLERID(num)}\" for the currently set callerid number."
+msgstr "発信者IDの設定によって発信者番号の発信者IDを変えることができ、次に進む場所を指定することできます。例：発信者の名前を\"John Doe\"から\"Sales: John Doe\"に変更する。注意：入力されたテキストが最終的に変換される名前になります。使用している発信者IDに追加する場合、正確なasterisk変数を使ってください。例：使用している発信者IDに追加する場合\"${CALLERID(名前)}\"、使用している発信者ID番号に追加する場合\"${CALLERID(num)}\"で設定します。"
 
 #: Setcid.class.php:123
 msgid "Submit"
@@ -164,28 +151,15 @@ msgid "Submit Changes"
 msgstr "変更を適用"
 
 #: page.setcid.php:95
-msgid ""
-"The CallerID Name that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID name will be blanked"
-msgstr ""
-"使いたい発信者ID名。使用している発信者IDに追加する場合、適切なasterisk変数を"
-"入れてください。もしこのボックスを空欄にする場合、発信者ID名も空欄になりま"
-"す。 "
+msgid "The CallerID Name that you want to change to. If you are appending to the current callerid, dont forget to include the appropriate asterisk variables. If you leave this box blank, the CallerID name will be blanked"
+msgstr "使いたい発信者ID名。使用している発信者IDに追加する場合、適切なasterisk変数を入れてください。もしこのボックスを空欄にする場合、発信者ID名も空欄になります。 "
 
 #: page.setcid.php:97
-msgid ""
-"The CallerID Number that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID number will be blanked"
-msgstr ""
-"使いたい発信者ID番号。使用している発信者IDに追加する場合、適切なasterisk変数"
-"を入れてください。もしこのボックスを空欄にする場合、発信者ID番号も空欄になり"
-"ます。 "
+msgid "The CallerID Number that you want to change to. If you are appending to the current callerid, dont forget to include the appropriate asterisk variables. If you leave this box blank, the CallerID number will be blanked"
+msgstr "使いたい発信者ID番号。使用している発信者IDに追加する場合、適切なasterisk変数を入れてください。もしこのボックスを空欄にする場合、発信者ID番号も空欄になります。 "
 
 #: page.setcid.php:91 views/form.php:24 views/form.php:44 views/form.php:64
-msgid ""
-"The descriptive name of this CallerID instance. For example \"new name here\""
+msgid "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr "発信者IDインスタンスの詳細。例：\"new name here\""
 
 #: views/grid.php:4
