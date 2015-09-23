@@ -41,7 +41,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<span id="cid_name-help" class="help-block fpbx-help-block"><?php echo _('The descriptive name of this CallerID instance. For example "new name here"')?></span>
+					<span id="cid_name-help" class="help-block fpbx-help-block"><?php echo _('The caller ID name will be changed to this. If you are appending to the current caller ID name, don\'t forget to include the appropriate variables. If you leave this box blank, the caller ID name will be blank. Default caller ID name variable: ${CALLERID(name)}')?></span>
 				</div>
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<span id="cid_num-help" class="help-block fpbx-help-block"><?php echo _('The descriptive name of this CallerID instance. For example "new name here"')?></span>
+					<span id="cid_num-help" class="help-block fpbx-help-block"><?php echo _('Caller ID Number: The caller ID number will be changed to this. If you are appending to the current caller ID number, don\'t forget to include the appropriate variables. If you leave this box blank, the caller ID number will be blank. Default caller ID number variable: ${CALLERID(num)}')?></span>
 				</div>
 			</div>
 		</div>
