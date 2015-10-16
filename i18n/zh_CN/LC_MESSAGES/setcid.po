@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-23 15:18-0700\n"
-"PO-Revision-Date: 2015-10-15 09:33+0200\n"
+"PO-Revision-Date: 2015-10-16 08:46+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/zh_CN/>\n"
@@ -71,7 +71,7 @@ msgstr "描述"
 
 #: page.setcid.php:99 views/form.php:74
 msgid "Destination"
-msgstr "描述"
+msgstr "目的地"
 
 #: views/form.php:84
 msgid "Destination to send the call to after CID has been processed"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr ""
+msgstr "提交"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
