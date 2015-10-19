@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-23 15:18-0700\n"
-"PO-Revision-Date: 2015-10-16 08:46+0200\n"
+"PO-Revision-Date: 2015-10-19 14:53+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/zh_CN/>\n"
@@ -92,7 +92,7 @@ msgstr "编辑来电显示实体"
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr "毕竟"
+msgstr "编辑: "
 
 #: views/grid.php:20
 msgid "ID"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr "重新设置"
+msgstr "重设"
 
 #: views/main.php:4
 msgid "Set CID"
