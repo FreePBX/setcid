@@ -10,16 +10,12 @@
 </div>
 <div id="toolbar-all">
 	<a href="?display=setcid&amp;view=form" class="btn btn-primary"><i class="fa fa-plus"></i> <?php echo _('Add')?></a>
-	<button id="remove-all" class="btn btn-danger btn-remove" data-type="extensions" disabled data-section="all">
-		<i class="glyphicon glyphicon-remove"></i> <span><?php echo _('Delete')?></span>
-	</button>
 </div>
-<table id="mygrid" data-url="ajax.php?module=setcid&amp;command=getable" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
+<table id="mygrid" data-url="ajax.php?module=setcid&amp;command=getable" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
 	<thead>
 		<tr>
-			<th data-field="cid_id"><?php echo _("ID")?></th>
 			<th data-field="description"><?php echo _("Description")?></th>
-			<th data-field="actions"><?php echo _("Actions")?></th>
+			<th data-field="actions" class="col-xs-2"><?php echo _("Actions")?></th>
 		</tr>
 	</thead>
 </table>
