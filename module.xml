@@ -2,7 +2,7 @@
 	<rawname>setcid</rawname>
 	<repo>standard</repo>
 	<name>Set CallerID</name>
-	<version>13.0.3</version>
+	<version>13.0.4</version>
 	<category>Applications</category>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -14,6 +14,7 @@
 		<setcid>Set CallerID</setcid>
 	</menuitems>
 	<changelog>
+		*13.0.4* Slideout rnav
 		*13.0.3* FREEPBX-10317 Fix tooltips
 		*13.0.2* Version bump Beta
 		*13.0.1alpha1* Updates for visuals in 13
@@ -28,7 +29,7 @@
 		*2.9.0.0* 2.9 version moved to repo
 	</changelog>
 	<depends>
-		<version>2.5.0</version>
+		<version>13.0.6</version>
 	</depends>
 	<supported>
 		<version>13.0</version>
