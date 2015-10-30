@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 15:18-0700\n"
+"POT-Creation-Date: 2015-10-29 18:47-0700\n"
 "PO-Revision-Date: 2015-07-21 16:27+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/setcid/"
@@ -20,7 +20,7 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: views/grid.php:22
+#: views/grid.php:18
 msgid "Actions"
 msgstr ""
 
@@ -60,11 +60,11 @@ msgstr "Имя CallerID"
 msgid "CallerID Number"
 msgstr "Номер CallerID"
 
-#: Setcid.class.php:113 page.setcid.php:108 views/grid.php:14
+#: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
 msgstr "Удалить"
 
-#: page.setcid.php:91 views/form.php:14 views/grid.php:21
+#: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
 msgstr "Описание"
 
@@ -93,17 +93,9 @@ msgstr "Редактировать значение CallerID"
 msgid "Edit: "
 msgstr "Редактировать: "
 
-#: views/grid.php:20
-msgid "ID"
-msgstr ""
-
 #: page.setcid.php:141
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
-
-#: views/main.php:11
-msgid "List CIDs"
-msgstr ""
 
 #: Setcid.class.php:118
 msgid "Reset"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 15:18-0700\n"
+"POT-Creation-Date: 2015-10-29 18:47-0700\n"
 "PO-Revision-Date: 2015-05-25 01:21+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/setcid/"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: views/grid.php:22
+#: views/grid.php:18
 msgid "Actions"
 msgstr ""
 
@@ -63,11 +63,11 @@ msgstr "Nombre Llamante"
 msgid "CallerID Number"
 msgstr "Número ID Llamante"
 
-#: Setcid.class.php:113 page.setcid.php:108 views/grid.php:14
+#: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
 msgstr "Borrar"
 
-#: page.setcid.php:91 views/form.php:14 views/grid.php:21
+#: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
 msgstr "Descripción"
 
@@ -96,17 +96,9 @@ msgstr "Editar Instancia de ID de llamada"
 msgid "Edit: "
 msgstr "Editar: "
 
-#: views/grid.php:20
-msgid "ID"
-msgstr ""
-
 #: page.setcid.php:141
 msgid "Invalid description specified"
 msgstr "Descripción especificada Invalida"
-
-#: views/main.php:11
-msgid "List CIDs"
-msgstr ""
 
 #: Setcid.class.php:118
 msgid "Reset"

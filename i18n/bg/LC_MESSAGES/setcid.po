@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 15:18-0700\n"
+"POT-Creation-Date: 2015-10-29 18:47-0700\n"
 "PO-Revision-Date: 2014-07-22 16:08+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/setcid/bg/"
@@ -32,7 +32,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: views/grid.php:22
+#: views/grid.php:18
 msgid "Actions"
 msgstr ""
 
@@ -72,11 +72,11 @@ msgstr ""
 msgid "CallerID Number"
 msgstr ""
 
-#: Setcid.class.php:113 page.setcid.php:108 views/grid.php:14
+#: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
 msgstr ""
 
-#: page.setcid.php:91 views/form.php:14 views/grid.php:21
+#: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
 msgstr ""
 
@@ -105,16 +105,8 @@ msgstr ""
 msgid "Edit: "
 msgstr ""
 
-#: views/grid.php:20
-msgid "ID"
-msgstr ""
-
 #: page.setcid.php:141
 msgid "Invalid description specified"
-msgstr ""
-
-#: views/main.php:11
-msgid "List CIDs"
 msgstr ""
 
 #: Setcid.class.php:118
