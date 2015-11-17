@@ -167,7 +167,7 @@ msgid "What is Set CID?"
 msgstr ""
 
 #~ msgid "Applications"
-#~ msgstr "应用"
+#~ msgstr "应用配置"
 
 #~ msgid "Set CallerID"
 #~ msgstr "设置CallerID"
