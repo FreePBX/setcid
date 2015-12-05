@@ -99,7 +99,7 @@ msgstr "Указано неверное описание"
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: views/main.php:4
 msgid "Set CID"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr ""
+msgstr "Сохранить"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
