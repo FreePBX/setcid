@@ -22,7 +22,7 @@ msgstr ""
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "Действия"
+msgstr "Действие"
 
 #: views/grid.php:12
 msgid "Add"
