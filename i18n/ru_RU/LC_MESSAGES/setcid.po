@@ -22,7 +22,7 @@ msgstr ""
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "Действия"
+msgstr "Действие"
 
 #: views/grid.php:12
 msgid "Add"
@@ -96,7 +96,7 @@ msgstr "Редактировать значение CallerID"
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr "Редактировать: "
+msgstr "Редактировать:"
 
 #: page.setcid.php:141
 msgid "Invalid description specified"
@@ -104,7 +104,7 @@ msgstr "Указано неверное описание"
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr "Сбросить"
+msgstr "Сброс"
 
 #: views/main.php:4
 msgid "Set CID"
@@ -134,7 +134,7 @@ msgstr ""
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr "Подтвердить"
+msgstr "Применить"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
