@@ -27,7 +27,7 @@ msgstr "Acciones"
 
 #: views/grid.php:12
 msgid "Add"
-msgstr ""
+msgstr "Añadir"
 
 #: views/form.php:2
 msgid "Add CID"
