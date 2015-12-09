@@ -22,7 +22,7 @@ msgstr ""
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/grid.php:12
 msgid "Add"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr "Сохранить"
+msgstr "Подтвердить"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
