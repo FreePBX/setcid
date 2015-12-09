@@ -139,7 +139,7 @@ msgstr "Enviar"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
-msgstr "Enviar Cambios"
+msgstr "Aplicar Cambios"
 
 #: page.setcid.php:95
 msgid ""
