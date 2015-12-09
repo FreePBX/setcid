@@ -96,7 +96,7 @@ msgstr "Редактировать значение CallerID"
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr "Редактировать: "
+msgstr "Редактировать:"
 
 #: page.setcid.php:141
 msgid "Invalid description specified"
