@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2015-12-08 23:10+0200\n"
+"PO-Revision-Date: 2015-12-08 23:11+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Russian "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/ru_RU/>\n"
@@ -96,7 +96,7 @@ msgstr "Редактировать значение CallerID"
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr "Редактировать:"
+msgstr "Редактировать: "
 
 #: page.setcid.php:141
 msgid "Invalid description specified"
