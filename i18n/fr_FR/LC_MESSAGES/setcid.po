@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2016-01-22 06:22+0200\n"
+"PO-Revision-Date: 2016-01-22 08:39+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/fr_FR/>\n"
@@ -92,11 +92,11 @@ msgstr ""
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr ""
+msgstr "Éditer : "
 
 #: page.setcid.php:141
 msgid "Invalid description specified"
-msgstr ""
+msgstr "Description spécifiée invalide"
 
 #: Setcid.class.php:118
 msgid "Reset"
@@ -128,7 +128,7 @@ msgstr "Soumettre"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
-msgstr ""
+msgstr "Soumettre les changements"
 
 #: page.setcid.php:95
 msgid ""
