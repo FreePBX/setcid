@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2016-02-04 23:02+0200\n"
+"PO-Revision-Date: 2016-02-06 09:17+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/fr_FR/>\n"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: page.setcid.php:97 views/form.php:54
 msgid "CallerID Number"
-msgstr ""
+msgstr "Numéro de l'appelant"
 
 #: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
