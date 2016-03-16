@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2016-03-15 10:53+0300\n"
+"PO-Revision-Date: 2016-03-15 20:31+0300\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian "
-"<http://weblate.freepbx.org/projects/freepbx/music/fa/>\n"
+"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/cdr/fa/>"
+"\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:18
 msgid "Actions"
@@ -55,11 +55,11 @@ msgstr ""
 
 #: page.setcid.php:95 views/form.php:34
 msgid "CallerID Name"
-msgstr ""
+msgstr "نام تماس گیرنده"
 
 #: page.setcid.php:97 views/form.php:54
 msgid "CallerID Number"
-msgstr ""
+msgstr "شماره تماس گیرنده"
 
 #: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr "ویرایش ： "
+msgstr "ویرایش： "
 
 #: page.setcid.php:141
 msgid "Invalid description specified"
