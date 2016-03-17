@@ -10,10 +10,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2016-03-17 00:21+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/fa/>\n"
+"PO-Revision-Date: 2016-03-16 23:20+0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,7 +78,7 @@ msgstr "داخلی"
 
 #: views/form.php:84
 msgid "Destination to send the call to after CID has been processed"
-msgstr "Destination to send the call to after CID has been processed"
+msgstr "داخلی که تماس پس از پردازش CID به آن ارسال میشود"
 
 #: page.setcid.php:131
 msgid "Edit"
