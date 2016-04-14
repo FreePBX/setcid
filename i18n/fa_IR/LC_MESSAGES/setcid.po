@@ -10,9 +10,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2016-04-14 12:34+0300\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-04-14 14:43+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian (Iran) "
+"<http://weblate.freepbx.org/projects/freepbx/setcid/fa_IR/>\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -70,7 +71,7 @@ msgstr "حذف"
 
 #: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
-msgstr "توضیحات"
+msgstr "شرح"
 
 #: page.setcid.php:99 views/form.php:74
 msgid "Destination"
@@ -134,7 +135,7 @@ msgstr ""
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr "ثبت"
+msgstr "ارسال"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
