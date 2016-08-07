@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2016-07-06 05:16+0200\n"
+"PO-Revision-Date: 2016-08-07 06:44+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/fa_IR/>\n"
@@ -71,7 +71,7 @@ msgstr "حذف کردن"
 
 #: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
-msgstr "توضیحات"
+msgstr "شرح"
 
 #: page.setcid.php:99 views/form.php:74
 msgid "Destination"
