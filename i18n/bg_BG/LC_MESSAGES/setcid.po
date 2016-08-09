@@ -1,33 +1,44 @@
 # This file is part of FreePBX.
 #
-# For licensing information, please see the file named LICENSE located in the module directory
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
 # FreePBX language template for setcid
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2015-11-23 13:52+0200\n"
-"Last-Translator: james <zhulizhong@gmail.com>\n"
-"Language-Team: Simplified Chinese "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/zh_CN/>\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2016-08-04 19:30+0200\n"
+"Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
+"Language-Team: Bulgarian "
+"<http://weblate.freepbx.org/projects/freepbx/setcid/bg_BG/>\n"
+"Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "操作"
+msgstr ""
 
 #: views/grid.php:12
 msgid "Add"
-msgstr "添加"
+msgstr ""
 
 #: views/form.php:2
 msgid "Add CID"
@@ -35,15 +46,15 @@ msgstr ""
 
 #: page.setcid.php:42 page.setcid.php:73
 msgid "Add CallerID"
-msgstr "添加来电显示"
+msgstr ""
 
 #: page.setcid.php:89
 msgid "Add CallerID Instance"
-msgstr "添加来电显示实体"
+msgstr ""
 
 #: views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
-msgstr "添加修改来电显示策略"
+msgstr ""
 
 #: views/form.php:64
 msgid ""
@@ -63,15 +74,15 @@ msgstr ""
 
 #: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
-msgstr "删除"
+msgstr "Изтрий"
 
 #: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
-msgstr "描述"
+msgstr ""
 
 #: page.setcid.php:99 views/form.php:74
 msgid "Destination"
-msgstr "目的地"
+msgstr "Направление"
 
 #: views/form.php:84
 msgid "Destination to send the call to after CID has been processed"
@@ -79,7 +90,7 @@ msgstr ""
 
 #: page.setcid.php:131
 msgid "Edit"
-msgstr "编辑"
+msgstr ""
 
 #: views/form.php:2
 #, php-format
@@ -88,19 +99,19 @@ msgstr ""
 
 #: page.setcid.php:89
 msgid "Edit CallerID Instance"
-msgstr "编辑来电显示实体"
+msgstr ""
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr "编辑: "
+msgstr ""
 
 #: page.setcid.php:141
 msgid "Invalid description specified"
-msgstr "指定了无效的描述"
+msgstr "Въведено е неправилно описание"
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr "重置"
+msgstr ""
 
 #: views/main.php:4
 msgid "Set CID"
@@ -109,7 +120,7 @@ msgstr ""
 #: functions.inc.php:103
 #, php-format
 msgid "Set CallerID %s: "
-msgstr "设置来电显示 %s:"
+msgstr "Назначи CallerID %s: "
 
 #: page.setcid.php:76
 msgid ""
@@ -121,19 +132,14 @@ msgid ""
 "for the currently set callerid name and \"${CALLERID(num)}\" for the "
 "currently set callerid number."
 msgstr ""
-"设置 CallerID 允许修改呼叫的Caller ID，发送此修改后的号码到目的地。例如，用户"
-"可以修改 caller id  \"John Doe\" 到 \"Sales: John Doe\"。 请注意，用户输入的"
-"文本是希望设置的callerid。如果附加当前的callerid，使用正确的 asterisk 变量来"
-"处理，例如 \"${CALLERID(name)}\" 设置当前Callerid名称和\"${CALLERID(num)}\"设"
-"置当前的 callerid 号码。"
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr "提交"
+msgstr ""
 
 #: page.setcid.php:107
 msgid "Submit Changes"
-msgstr "提交修改"
+msgstr ""
 
 #: page.setcid.php:95
 msgid ""
@@ -165,9 +171,3 @@ msgstr ""
 #: views/grid.php:4
 msgid "What is Set CID?"
 msgstr ""
-
-#~ msgid "Applications"
-#~ msgstr "应用配置"
-
-#~ msgid "Set CallerID"
-#~ msgstr "设置CallerID"

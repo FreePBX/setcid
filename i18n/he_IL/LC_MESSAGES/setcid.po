@@ -21,20 +21,24 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-05-09 03:18+0200\n"
+"Last-Translator: Avishay <baabad@outlook.com>\n"
+"Language-Team: Hebrew "
+"<http://weblate.freepbx.org/projects/freepbx/setcid/he_IL/>\n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr ""
+msgstr "פעולות"
 
 #: views/grid.php:12
 msgid "Add"
-msgstr ""
+msgstr "הוסף"
 
 #: views/form.php:2
 msgid "Add CID"
@@ -70,7 +74,7 @@ msgstr ""
 
 #: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
-msgstr ""
+msgstr "מחיקה"
 
 #: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
@@ -78,7 +82,7 @@ msgstr ""
 
 #: page.setcid.php:99 views/form.php:74
 msgid "Destination"
-msgstr ""
+msgstr "יעד"
 
 #: views/form.php:84
 msgid "Destination to send the call to after CID has been processed"
@@ -107,7 +111,7 @@ msgstr ""
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr ""
+msgstr "איפוס"
 
 #: views/main.php:4
 msgid "Set CID"
@@ -131,7 +135,7 @@ msgstr ""
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr ""
+msgstr "שלח"
 
 #: page.setcid.php:107
 msgid "Submit Changes"

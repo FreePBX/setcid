@@ -10,11 +10,11 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:47-0700\n"
-"PO-Revision-Date: 2016-06-08 06:15+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/es_ES/>\n"
-"Language: es_ES\n"
+"PO-Revision-Date: 2016-08-07 06:44+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian (Iran) "
+"<http://weblate.freepbx.org/projects/freepbx/setcid/fa_IR/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,29 +23,27 @@ msgstr ""
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "Acciones"
+msgstr "عملیات"
 
 #: views/grid.php:12
 msgid "Add"
-msgstr "Agregar"
+msgstr "افزودن"
 
 #: views/form.php:2
 msgid "Add CID"
-msgstr ""
+msgstr "افزودن CID"
 
 #: page.setcid.php:42 page.setcid.php:73
 msgid "Add CallerID"
-msgstr "Agregar ID de llamada"
+msgstr "افزودن شناسه تماس گیرنده"
 
 #: page.setcid.php:89
 msgid "Add CallerID Instance"
-msgstr "Agregar Instancia de ID llamada"
+msgstr "افزودن نمونه شناسه تماس گیرنده"
 
 #: views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
-msgstr ""
-"Añade la posibilidad de cambiar el identificador de llamadas dentro de un "
-"flujo de llamadas."
+msgstr "افزودن قابلیت تغییر شناسه تماس گیرنده در جریان یک تماس."
 
 #: views/form.php:64
 msgid ""
@@ -54,64 +52,68 @@ msgid ""
 "appropriate variables. If you leave this box blank, the caller ID number "
 "will be blank. Default caller ID number variable: ${CALLERID(num)}"
 msgstr ""
+"شماره تماس گیرنده: شماره تماس گیرنده به این مقدار تغییر داده می شود. اگر قصد "
+"افزودن به شماره تماس گیرنده کنونی را دارید، بکارگیری درست متغیرها را فراموش "
+"نکنید. اگر این قسمت را خالی بگذارید، شماره تماس گیرنده خالی خواهد بود. متغیر "
+"پیش فرض شماره تماس گیرنده: ${CALLERID(num)}"
 
 #: page.setcid.php:95 views/form.php:34
 msgid "CallerID Name"
-msgstr "Nombre Llamante"
+msgstr "نام شناسه تماس گیرنده"
 
 #: page.setcid.php:97 views/form.php:54
 msgid "CallerID Number"
-msgstr "Número ID Llamante"
+msgstr "شماره تماس گیرنده"
 
 #: Setcid.class.php:113 page.setcid.php:108
 msgid "Delete"
-msgstr "Borrar"
+msgstr "حذف کردن"
 
 #: page.setcid.php:91 views/form.php:14 views/grid.php:17
 msgid "Description"
-msgstr "Descripción"
+msgstr "شرح"
 
 #: page.setcid.php:99 views/form.php:74
 msgid "Destination"
-msgstr "Destino"
+msgstr "مقصد"
 
 #: views/form.php:84
 msgid "Destination to send the call to after CID has been processed"
-msgstr ""
+msgstr "مقصدی که تماس پس از پردازش CID به آن ارسال می شود"
 
 #: page.setcid.php:131
 msgid "Edit"
-msgstr "Editar"
+msgstr "ویرایش"
 
 #: views/form.php:2
 #, php-format
 msgid "Edit CID: %s"
-msgstr ""
+msgstr "ویرایش CID:%s"
 
 #: page.setcid.php:89
 msgid "Edit CallerID Instance"
-msgstr "Editar Instancia de ID de llamada"
+msgstr "ویرایش نمونه شناسه تماس گیرنده"
 
 #: page.setcid.php:61
 msgid "Edit: "
-msgstr "Editar: "
+msgstr "ویرایش ： "
 
 #: page.setcid.php:141
 msgid "Invalid description specified"
-msgstr "Descripción especificada Invalida"
+msgstr "توضیحات نامعتبر"
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr "Reinicio"
+msgstr "بازنشانی"
 
 #: views/main.php:4
 msgid "Set CID"
-msgstr ""
+msgstr "تنظیم CID"
 
 #: functions.inc.php:103
 #, php-format
 msgid "Set CallerID %s: "
-msgstr "Configurar ID de llamada %s: "
+msgstr "تنظیم شناسه تماس گیرنده %s: "
 
 #: page.setcid.php:76
 msgid ""
@@ -123,23 +125,21 @@ msgid ""
 "for the currently set callerid name and \"${CALLERID(num)}\" for the "
 "currently set callerid number."
 msgstr ""
-"Establecer CallerID le permite cambiar el identificador de llamadas de la "
-"llamada y luego continuar con el destino deseado. Por ejemplo, es posible "
-"que desee cambiar la forma de identificación de llamadas \"John Doe\" a "
-"\"Ventas: John Doe\". Tenga en cuenta que el texto que introduce es lo que "
-"el identificador de llamadas se cambia. Para añadir al callerid actual, "
-"utilice las variables propias de Asterisk, como \"$ {CALLERID (name)}\" para "
-"el nombre de identificador de llamadas establecido actualmente y \"$ "
-"{CALLERID (num)}\" para el número identificador de llamadas establecido "
-"actualmente."
+"تنظیم شناسه تماس به شما اجازه میدهد تا پس از تغییر شناسه تماس گیرنده، آن را "
+"به مقصد مورد نظر هدایت نمایید. به عنوان مثال، ممکن است شما بخواهید شناسه "
+"تماس گیرنده را از \" محمد محمدی\" به \"فروش:محمد محمدی\" تغییر دهید. لطفا "
+"توجه داشته باشید، متن وارد شده به عنوان شناسه جدید در نظر گرفته می شود. برای "
+"افزودن عباراتی به شناسه تماس فعلی، از متغیرهای استریسک استفاده کنید. برای "
+"مثال \"${CALLERID(name)}\" برای نام شناسه تماس گیرنده فعلی و \""
+"${CALLERID(num)}\" برای شماره شناسه تماس گیرنده فعلی."
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr "Enviar"
+msgstr "ارسال"
 
 #: page.setcid.php:107
 msgid "Submit Changes"
-msgstr "Aplicar Cambios"
+msgstr "ثبت تغییرات"
 
 #: page.setcid.php:95
 msgid ""
@@ -147,10 +147,8 @@ msgid ""
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID name will be blanked"
 msgstr ""
-"El nombre de identificador de llamadas que desea cambiar. Si está realizando "
-"adiciones a la callerid actual, no se olvide de incluir las variables "
-"Asterisk apropiados. Si deja este cuadro en blanco, el nombre de "
-"identificación de llamadas se pondrá en blanco"
+"نام شناسه تماس گیرنده ای که می خواهید تغییر دهید. اگر قصد افزودن عباراتی به "
+"شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید"
 
 #: page.setcid.php:97
 msgid ""
@@ -158,10 +156,8 @@ msgid ""
 "current callerid, dont forget to include the appropriate asterisk variables. "
 "If you leave this box blank, the CallerID number will be blanked"
 msgstr ""
-"El número de identificación de llamadas que desea cambiar. Si está "
-"realizando adiciones a la callerid actual, no se olvide de incluir las "
-"variables Asterisk apropiadas. Si deja este cuadro en blanco, el número de "
-"identificación de llamadas se pondrá en blanco"
+"شماره شناسه تماس گیرنده ای که می خواهید تغییر دهید. اگر قصد افزودن عباراتی "
+"به شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید"
 
 #: views/form.php:44
 msgid ""
@@ -170,20 +166,15 @@ msgid ""
 "If you leave this box blank, the caller ID name will be blank. Default "
 "caller ID name variable: ${CALLERID(name)}"
 msgstr ""
+"نام شناسه تماس گیرنده که می خواهید به آن تغییر داده شود. اگر قصد افزودن "
+"عباراتی به شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید. "
+"نام شناسه تماس گیرنده به صورت پیش فرض: ${CALLERID(name)}"
 
 #: page.setcid.php:91 views/form.php:24
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
-msgstr ""
-"El nombre descriptivo de esta instancia de ID de llamada. Por ejemplo "
-"\"nuevo nombre aca\""
+msgstr "نام توصیفی برای این نمونه شناسه تماس گیرنده. مثال \"نام جدید\""
 
 #: views/grid.php:4
 msgid "What is Set CID?"
-msgstr ""
-
-#~ msgid "Applications"
-#~ msgstr "Aplicaciones"
-
-#~ msgid "Set CallerID"
-#~ msgstr "Configurar ID de llamada"
+msgstr "تنظیم CID چیست؟"
