@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for setcid
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:47-0700\n"
+"POT-Creation-Date: 2016-08-09 13:51-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,7 @@ msgid "Actions"
 msgstr ""
 
 #: views/grid.php:12
+#: views/rnav.php:2
 msgid "Add"
 msgstr ""
 
@@ -38,8 +39,14 @@ msgstr ""
 msgid "Add CallerID Instance"
 msgstr ""
 
+#: setcid.i18n.php:8
 #: views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
+msgstr ""
+
+#: setcid.i18n.php:6
+#: setcid.i18n.php:12
+msgid "Applications"
 msgstr ""
 
 #: views/form.php:64
@@ -60,7 +67,7 @@ msgstr ""
 msgid "CallerID Number"
 msgstr ""
 
-#: Setcid.class.php:113
+#: Setcid.class.php:111
 #: page.setcid.php:108
 msgid "Delete"
 msgstr ""
@@ -101,12 +108,21 @@ msgstr ""
 msgid "Invalid description specified"
 msgstr ""
 
-#: Setcid.class.php:118
+#: views/rnav.php:3
+msgid "List SetCID"
+msgstr ""
+
+#: Setcid.class.php:116
 msgid "Reset"
 msgstr ""
 
 #: views/main.php:4
 msgid "Set CID"
+msgstr ""
+
+#: setcid.i18n.php:4
+#: setcid.i18n.php:10
+msgid "Set CallerID"
 msgstr ""
 
 #: functions.inc.php:103
@@ -125,7 +141,11 @@ msgid ""
 "currently set callerid number."
 msgstr ""
 
-#: Setcid.class.php:123
+#: views/rnav.php:14
+msgid "SetCID"
+msgstr ""
+
+#: Setcid.class.php:121
 msgid "Submit"
 msgstr ""
 

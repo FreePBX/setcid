@@ -7,24 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:47-0700\n"
+"POT-Creation-Date: 2016-08-09 13:51-0700\n"
 "PO-Revision-Date: 2015-12-08 23:18+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Russian "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/ru_RU/>\n"
-"Language: ru_RU\n"
+"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/setcid/"
+"ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: views/grid.php:18
 msgid "Actions"
 msgstr "Действие"
 
-#: views/grid.php:12
+#: views/grid.php:12 views/rnav.php:2
 msgid "Add"
 msgstr "Добавить"
 
@@ -40,9 +40,13 @@ msgstr "Добавить CallerID"
 msgid "Add CallerID Instance"
 msgstr "Добавить значение CallerID"
 
-#: views/grid.php:8
+#: setcid.i18n.php:8 views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr "Добавляет возможность изменения CallerID во время прохождения вызова."
+
+#: setcid.i18n.php:6 setcid.i18n.php:12
+msgid "Applications"
+msgstr "Приложения"
 
 #: views/form.php:64
 msgid ""
@@ -65,7 +69,7 @@ msgstr "Имя CallerID"
 msgid "CallerID Number"
 msgstr "Номер CallerID"
 
-#: Setcid.class.php:113 page.setcid.php:108
+#: Setcid.class.php:111 page.setcid.php:108
 msgid "Delete"
 msgstr "Удалить"
 
@@ -102,13 +106,21 @@ msgstr "Редактировать: "
 msgid "Invalid description specified"
 msgstr "Указано неверное описание"
 
-#: Setcid.class.php:118
+#: views/rnav.php:3
+msgid "List SetCID"
+msgstr ""
+
+#: Setcid.class.php:116
 msgid "Reset"
 msgstr "Сброс"
 
 #: views/main.php:4
 msgid "Set CID"
 msgstr "Назначить CID"
+
+#: setcid.i18n.php:4 setcid.i18n.php:10
+msgid "Set CallerID"
+msgstr "Установить CallerID"
 
 #: functions.inc.php:103
 #, php-format
@@ -126,13 +138,17 @@ msgid ""
 "currently set callerid number."
 msgstr ""
 "Установка CallerID позволяет изменить его во время вызова и доставить звонок "
-"по назначению. Например, Вы хотите изменить CallerID имя с \"John Doe\" на \""
-"Sales: John Doe\". Надо учесть, что CallerID изменится на то значение, "
+"по назначению. Например, Вы хотите изменить CallerID имя с \"John Doe\" на "
+"\"Sales: John Doe\". Надо учесть, что CallerID изменится на то значение, "
 "которое будет введено в поле ниже. Присоединять значения к уже существующему "
 "CallerID можно с помощью переменнных Астериск, таких как \"${CALLERID(name)}"
 "\" - для изменения имени и \"${CALLERID(num)}\" -для изменения номера."
 
-#: Setcid.class.php:123
+#: views/rnav.php:14
+msgid "SetCID"
+msgstr ""
+
+#: Setcid.class.php:121
 msgid "Submit"
 msgstr "Подтвердить"
 
@@ -183,9 +199,3 @@ msgstr ""
 #: views/grid.php:4
 msgid "What is Set CID?"
 msgstr "Что такое назначение CID?"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid "Set CallerID"
-#~ msgstr "Установить CallerID"
