@@ -21,7 +21,7 @@ class Setcid implements \BMO {
 	public function doConfigPageInit($display) {}
 
 	public function ajaxRequest($req, &$setting) {
-		$setting['authenticate'] = false;
+		$setting['authenticate'] = true;
 		$setting['allowremote'] = false;
 		switch($req) {
 			case "getable":
