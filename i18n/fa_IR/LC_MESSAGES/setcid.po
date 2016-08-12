@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-09 13:51-0700\n"
-"PO-Revision-Date: 2016-08-07 06:44+0200\n"
+"PO-Revision-Date: 2016-08-11 19:36+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
-"setcid/fa_IR/>\n"
+"Language-Team: Persian (Iran) "
+"<http://weblate.freepbx.org/projects/freepbx/setcid/fa_IR/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -47,7 +47,7 @@ msgstr "افزودن قابلیت تغییر شناسه تماس گیرنده د
 
 #: setcid.i18n.php:6 setcid.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "برنامه ها"
 
 #: views/form.php:64
 msgid ""
@@ -108,7 +108,7 @@ msgstr "توضیحات نامعتبر"
 
 #: views/rnav.php:3
 msgid "List SetCID"
-msgstr ""
+msgstr "فهرست SetCID"
 
 #: Setcid.class.php:116
 msgid "Reset"
@@ -120,7 +120,7 @@ msgstr "تنظیم CID"
 
 #: setcid.i18n.php:4 setcid.i18n.php:10
 msgid "Set CallerID"
-msgstr ""
+msgstr "تنظیم شماره تماس گیرنده"
 
 #: functions.inc.php:103
 #, php-format
@@ -147,7 +147,7 @@ msgstr ""
 
 #: views/rnav.php:14
 msgid "SetCID"
-msgstr ""
+msgstr "تنظیم شماره تماس"
 
 #: Setcid.class.php:121
 msgid "Submit"
