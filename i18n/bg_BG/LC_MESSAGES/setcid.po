@@ -20,15 +20,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-09 13:51-0700\n"
+"POT-Creation-Date: 2016-11-29 10:56-0800\n"
 "PO-Revision-Date: 2016-09-19 20:22+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/bg_BG/>\n"
-"Language: bg_BG\n"
+"Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/setcid/"
+"bg_BG/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -42,14 +42,6 @@ msgstr ""
 
 #: views/form.php:2
 msgid "Add CID"
-msgstr ""
-
-#: page.setcid.php:42 page.setcid.php:73
-msgid "Add CallerID"
-msgstr ""
-
-#: page.setcid.php:89
-msgid "Add CallerID Instance"
 msgstr ""
 
 #: setcid.i18n.php:8 views/grid.php:8
@@ -68,23 +60,23 @@ msgid ""
 "will be blank. Default caller ID number variable: ${CALLERID(num)}"
 msgstr ""
 
-#: page.setcid.php:95 views/form.php:34
+#: views/form.php:34
 msgid "CallerID Name"
 msgstr ""
 
-#: page.setcid.php:97 views/form.php:54
+#: views/form.php:54
 msgid "CallerID Number"
 msgstr ""
 
-#: Setcid.class.php:111 page.setcid.php:108
+#: Setcid.class.php:113
 msgid "Delete"
 msgstr "Изтрий"
 
-#: page.setcid.php:91 views/form.php:14 views/grid.php:17
+#: views/form.php:14 views/grid.php:17
 msgid "Description"
 msgstr ""
 
-#: page.setcid.php:99 views/form.php:74
+#: views/form.php:74
 msgid "Destination"
 msgstr "Направление"
 
@@ -92,32 +84,16 @@ msgstr "Направление"
 msgid "Destination to send the call to after CID has been processed"
 msgstr ""
 
-#: page.setcid.php:131
-msgid "Edit"
-msgstr ""
-
 #: views/form.php:2
 #, php-format
 msgid "Edit CID: %s"
 msgstr ""
 
-#: page.setcid.php:89
-msgid "Edit CallerID Instance"
-msgstr ""
-
-#: page.setcid.php:61
-msgid "Edit: "
-msgstr ""
-
-#: page.setcid.php:141
-msgid "Invalid description specified"
-msgstr "Въведено е неправилно описание"
-
 #: views/rnav.php:3
 msgid "List SetCID"
 msgstr ""
 
-#: Setcid.class.php:116
+#: Setcid.class.php:118
 msgid "Reset"
 msgstr ""
 
@@ -134,41 +110,12 @@ msgstr ""
 msgid "Set CallerID %s: "
 msgstr "Назначи CallerID %s: "
 
-#: page.setcid.php:76
-msgid ""
-"Set CallerID allows you to change the caller id of the call and then "
-"continue on to the desired destination. For example, you may want to change "
-"the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the "
-"text you enter is what the callerid is changed to. To append to the current "
-"callerid, use the proper asterisk variables, such as \"${CALLERID(name)}\" "
-"for the currently set callerid name and \"${CALLERID(num)}\" for the "
-"currently set callerid number."
-msgstr ""
-
 #: views/rnav.php:14
 msgid "SetCID"
 msgstr ""
 
-#: Setcid.class.php:121
+#: Setcid.class.php:123
 msgid "Submit"
-msgstr ""
-
-#: page.setcid.php:107
-msgid "Submit Changes"
-msgstr ""
-
-#: page.setcid.php:95
-msgid ""
-"The CallerID Name that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID name will be blanked"
-msgstr ""
-
-#: page.setcid.php:97
-msgid ""
-"The CallerID Number that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID number will be blanked"
 msgstr ""
 
 #: views/form.php:44
@@ -179,7 +126,7 @@ msgid ""
 "caller ID name variable: ${CALLERID(name)}"
 msgstr ""
 
-#: page.setcid.php:91 views/form.php:24
+#: views/form.php:24
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""
@@ -187,3 +134,6 @@ msgstr ""
 #: views/grid.php:4
 msgid "What is Set CID?"
 msgstr ""
+
+#~ msgid "Invalid description specified"
+#~ msgstr "Въведено е неправилно описание"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-09 13:51-0700\n"
+"POT-Creation-Date: 2016-11-29 10:56-0800\n"
 "PO-Revision-Date: 2016-06-08 06:15+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/setcid/"
@@ -33,14 +33,6 @@ msgstr "Agregar"
 msgid "Add CID"
 msgstr ""
 
-#: page.setcid.php:42 page.setcid.php:73
-msgid "Add CallerID"
-msgstr "Agregar ID de llamada"
-
-#: page.setcid.php:89
-msgid "Add CallerID Instance"
-msgstr "Agregar Instancia de ID llamada"
-
 #: setcid.i18n.php:8 views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr ""
@@ -59,23 +51,23 @@ msgid ""
 "will be blank. Default caller ID number variable: ${CALLERID(num)}"
 msgstr ""
 
-#: page.setcid.php:95 views/form.php:34
+#: views/form.php:34
 msgid "CallerID Name"
 msgstr "Nombre Llamante"
 
-#: page.setcid.php:97 views/form.php:54
+#: views/form.php:54
 msgid "CallerID Number"
 msgstr "Número ID Llamante"
 
-#: Setcid.class.php:111 page.setcid.php:108
+#: Setcid.class.php:113
 msgid "Delete"
 msgstr "Borrar"
 
-#: page.setcid.php:91 views/form.php:14 views/grid.php:17
+#: views/form.php:14 views/grid.php:17
 msgid "Description"
 msgstr "Descripción"
 
-#: page.setcid.php:99 views/form.php:74
+#: views/form.php:74
 msgid "Destination"
 msgstr "Destino"
 
@@ -83,32 +75,16 @@ msgstr "Destino"
 msgid "Destination to send the call to after CID has been processed"
 msgstr ""
 
-#: page.setcid.php:131
-msgid "Edit"
-msgstr "Editar"
-
 #: views/form.php:2
 #, php-format
 msgid "Edit CID: %s"
 msgstr ""
 
-#: page.setcid.php:89
-msgid "Edit CallerID Instance"
-msgstr "Editar Instancia de ID de llamada"
-
-#: page.setcid.php:61
-msgid "Edit: "
-msgstr "Editar: "
-
-#: page.setcid.php:141
-msgid "Invalid description specified"
-msgstr "Descripción especificada Invalida"
-
 #: views/rnav.php:3
 msgid "List SetCID"
 msgstr ""
 
-#: Setcid.class.php:116
+#: Setcid.class.php:118
 msgid "Reset"
 msgstr "Reinicio"
 
@@ -125,59 +101,13 @@ msgstr "Configurar ID de llamada"
 msgid "Set CallerID %s: "
 msgstr "Configurar ID de llamada %s: "
 
-#: page.setcid.php:76
-msgid ""
-"Set CallerID allows you to change the caller id of the call and then "
-"continue on to the desired destination. For example, you may want to change "
-"the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the "
-"text you enter is what the callerid is changed to. To append to the current "
-"callerid, use the proper asterisk variables, such as \"${CALLERID(name)}\" "
-"for the currently set callerid name and \"${CALLERID(num)}\" for the "
-"currently set callerid number."
-msgstr ""
-"Establecer CallerID le permite cambiar el identificador de llamadas de la "
-"llamada y luego continuar con el destino deseado. Por ejemplo, es posible "
-"que desee cambiar la forma de identificación de llamadas \"John Doe\" a "
-"\"Ventas: John Doe\". Tenga en cuenta que el texto que introduce es lo que "
-"el identificador de llamadas se cambia. Para añadir al callerid actual, "
-"utilice las variables propias de Asterisk, como \"$ {CALLERID (name)}\" para "
-"el nombre de identificador de llamadas establecido actualmente y \"$ "
-"{CALLERID (num)}\" para el número identificador de llamadas establecido "
-"actualmente."
-
 #: views/rnav.php:14
 msgid "SetCID"
 msgstr ""
 
-#: Setcid.class.php:121
+#: Setcid.class.php:123
 msgid "Submit"
 msgstr "Enviar"
-
-#: page.setcid.php:107
-msgid "Submit Changes"
-msgstr "Aplicar Cambios"
-
-#: page.setcid.php:95
-msgid ""
-"The CallerID Name that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID name will be blanked"
-msgstr ""
-"El nombre de identificador de llamadas que desea cambiar. Si está realizando "
-"adiciones a la callerid actual, no se olvide de incluir las variables "
-"Asterisk apropiados. Si deja este cuadro en blanco, el nombre de "
-"identificación de llamadas se pondrá en blanco"
-
-#: page.setcid.php:97
-msgid ""
-"The CallerID Number that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID number will be blanked"
-msgstr ""
-"El número de identificación de llamadas que desea cambiar. Si está "
-"realizando adiciones a la callerid actual, no se olvide de incluir las "
-"variables Asterisk apropiadas. Si deja este cuadro en blanco, el número de "
-"identificación de llamadas se pondrá en blanco"
 
 #: views/form.php:44
 msgid ""
@@ -187,7 +117,7 @@ msgid ""
 "caller ID name variable: ${CALLERID(name)}"
 msgstr ""
 
-#: page.setcid.php:91 views/form.php:24
+#: views/form.php:24
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""
@@ -197,3 +127,64 @@ msgstr ""
 #: views/grid.php:4
 msgid "What is Set CID?"
 msgstr ""
+
+#~ msgid "Add CallerID"
+#~ msgstr "Agregar ID de llamada"
+
+#~ msgid "Add CallerID Instance"
+#~ msgstr "Agregar Instancia de ID llamada"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Edit CallerID Instance"
+#~ msgstr "Editar Instancia de ID de llamada"
+
+#~ msgid "Edit: "
+#~ msgstr "Editar: "
+
+#~ msgid "Invalid description specified"
+#~ msgstr "Descripción especificada Invalida"
+
+#~ msgid ""
+#~ "Set CallerID allows you to change the caller id of the call and then "
+#~ "continue on to the desired destination. For example, you may want to "
+#~ "change the caller id form \"John Doe\" to \"Sales: John Doe\". Please "
+#~ "note, the text you enter is what the callerid is changed to. To append to "
+#~ "the current callerid, use the proper asterisk variables, such as "
+#~ "\"${CALLERID(name)}\" for the currently set callerid name and \"${CALLERID"
+#~ "(num)}\" for the currently set callerid number."
+#~ msgstr ""
+#~ "Establecer CallerID le permite cambiar el identificador de llamadas de la "
+#~ "llamada y luego continuar con el destino deseado. Por ejemplo, es posible "
+#~ "que desee cambiar la forma de identificación de llamadas \"John Doe\" a "
+#~ "\"Ventas: John Doe\". Tenga en cuenta que el texto que introduce es lo "
+#~ "que el identificador de llamadas se cambia. Para añadir al callerid "
+#~ "actual, utilice las variables propias de Asterisk, como \"$ {CALLERID "
+#~ "(name)}\" para el nombre de identificador de llamadas establecido "
+#~ "actualmente y \"$ {CALLERID (num)}\" para el número identificador de "
+#~ "llamadas establecido actualmente."
+
+#~ msgid "Submit Changes"
+#~ msgstr "Aplicar Cambios"
+
+#~ msgid ""
+#~ "The CallerID Name that you want to change to. If you are appending to the "
+#~ "current callerid, dont forget to include the appropriate asterisk "
+#~ "variables. If you leave this box blank, the CallerID name will be blanked"
+#~ msgstr ""
+#~ "El nombre de identificador de llamadas que desea cambiar. Si está "
+#~ "realizando adiciones a la callerid actual, no se olvide de incluir las "
+#~ "variables Asterisk apropiados. Si deja este cuadro en blanco, el nombre "
+#~ "de identificación de llamadas se pondrá en blanco"
+
+#~ msgid ""
+#~ "The CallerID Number that you want to change to. If you are appending to "
+#~ "the current callerid, dont forget to include the appropriate asterisk "
+#~ "variables. If you leave this box blank, the CallerID number will be "
+#~ "blanked"
+#~ msgstr ""
+#~ "El número de identificación de llamadas que desea cambiar. Si está "
+#~ "realizando adiciones a la callerid actual, no se olvide de incluir las "
+#~ "variables Asterisk apropiadas. Si deja este cuadro en blanco, el número "
+#~ "de identificación de llamadas se pondrá en blanco"

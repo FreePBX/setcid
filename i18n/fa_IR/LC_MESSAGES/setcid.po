@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-09 13:51-0700\n"
+"POT-Creation-Date: 2016-11-29 10:56-0800\n"
 "PO-Revision-Date: 2016-10-08 12:44+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
-"Language-Team: Persian (Iran) "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/fa_IR/>\n"
-"Language: fa_IR\n"
+"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
+"setcid/fa_IR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -32,14 +32,6 @@ msgstr "افزودن"
 #: views/form.php:2
 msgid "Add CID"
 msgstr "افزودن CID"
-
-#: page.setcid.php:42 page.setcid.php:73
-msgid "Add CallerID"
-msgstr "افزودن شناسه تماس گیرنده"
-
-#: page.setcid.php:89
-msgid "Add CallerID Instance"
-msgstr "افزودن نمونه شناسه تماس گیرنده"
 
 #: setcid.i18n.php:8 views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
@@ -61,23 +53,23 @@ msgstr ""
 "نکنید. اگر این قسمت را خالی بگذارید، شماره تماس گیرنده خالی خواهد بود. متغیر "
 "پیش فرض شماره تماس گیرنده: ${CALLERID(num)}"
 
-#: page.setcid.php:95 views/form.php:34
+#: views/form.php:34
 msgid "CallerID Name"
 msgstr "نام شناسه تماس گیرنده"
 
-#: page.setcid.php:97 views/form.php:54
+#: views/form.php:54
 msgid "CallerID Number"
 msgstr "شماره تماس گیرنده"
 
-#: Setcid.class.php:111 page.setcid.php:108
+#: Setcid.class.php:113
 msgid "Delete"
 msgstr "حذف"
 
-#: page.setcid.php:91 views/form.php:14 views/grid.php:17
+#: views/form.php:14 views/grid.php:17
 msgid "Description"
 msgstr "توضیحات"
 
-#: page.setcid.php:99 views/form.php:74
+#: views/form.php:74
 msgid "Destination"
 msgstr "مقصد"
 
@@ -85,32 +77,16 @@ msgstr "مقصد"
 msgid "Destination to send the call to after CID has been processed"
 msgstr "مقصدی که تماس پس از پردازش CID به آن ارسال می شود"
 
-#: page.setcid.php:131
-msgid "Edit"
-msgstr "ویرایش"
-
 #: views/form.php:2
 #, php-format
 msgid "Edit CID: %s"
 msgstr "ویرایش CID:%s"
 
-#: page.setcid.php:89
-msgid "Edit CallerID Instance"
-msgstr "ویرایش نمونه شناسه تماس گیرنده"
-
-#: page.setcid.php:61
-msgid "Edit: "
-msgstr "ویرایش ： "
-
-#: page.setcid.php:141
-msgid "Invalid description specified"
-msgstr "توضیحات نامعتبر"
-
 #: views/rnav.php:3
 msgid "List SetCID"
 msgstr "فهرست SetCID"
 
-#: Setcid.class.php:116
+#: Setcid.class.php:118
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -127,53 +103,13 @@ msgstr "تنظیم شماره تماس گیرنده"
 msgid "Set CallerID %s: "
 msgstr "تنظیم شناسه تماس گیرنده %s: "
 
-#: page.setcid.php:76
-msgid ""
-"Set CallerID allows you to change the caller id of the call and then "
-"continue on to the desired destination. For example, you may want to change "
-"the caller id form \"John Doe\" to \"Sales: John Doe\". Please note, the "
-"text you enter is what the callerid is changed to. To append to the current "
-"callerid, use the proper asterisk variables, such as \"${CALLERID(name)}\" "
-"for the currently set callerid name and \"${CALLERID(num)}\" for the "
-"currently set callerid number."
-msgstr ""
-"تنظیم شناسه تماس به شما اجازه میدهد تا پس از تغییر شناسه تماس گیرنده، آن را "
-"به مقصد مورد نظر هدایت نمایید. به عنوان مثال، ممکن است شما بخواهید شناسه "
-"تماس گیرنده را از \" محمد محمدی\" به \"فروش:محمد محمدی\" تغییر دهید. لطفا "
-"توجه داشته باشید، متن وارد شده به عنوان شناسه جدید در نظر گرفته می شود. برای "
-"افزودن عباراتی به شناسه تماس فعلی، از متغیرهای استریسک استفاده کنید. برای "
-"مثال \"${CALLERID(name)}\" برای نام شناسه تماس گیرنده فعلی و \"${CALLERID"
-"(num)}\" برای شماره شناسه تماس گیرنده فعلی."
-
 #: views/rnav.php:14
 msgid "SetCID"
 msgstr "تنظیم شماره تماس"
 
-#: Setcid.class.php:121
+#: Setcid.class.php:123
 msgid "Submit"
 msgstr "ثبت"
-
-#: page.setcid.php:107
-msgid "Submit Changes"
-msgstr "ثبت تغییرات"
-
-#: page.setcid.php:95
-msgid ""
-"The CallerID Name that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID name will be blanked"
-msgstr ""
-"نام شناسه تماس گیرنده ای که می خواهید تغییر دهید. اگر قصد افزودن عباراتی به "
-"شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید"
-
-#: page.setcid.php:97
-msgid ""
-"The CallerID Number that you want to change to. If you are appending to the "
-"current callerid, dont forget to include the appropriate asterisk variables. "
-"If you leave this box blank, the CallerID number will be blanked"
-msgstr ""
-"شماره شناسه تماس گیرنده ای که می خواهید تغییر دهید. اگر قصد افزودن عباراتی "
-"به شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید"
 
 #: views/form.php:44
 msgid ""
@@ -186,7 +122,7 @@ msgstr ""
 "عباراتی به شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید. "
 "نام شناسه تماس گیرنده به صورت پیش فرض: ${CALLERID(name)}"
 
-#: page.setcid.php:91 views/form.php:24
+#: views/form.php:24
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr "نام توصیفی برای این نمونه شناسه تماس گیرنده. مثال \"نام جدید\""
@@ -194,3 +130,58 @@ msgstr "نام توصیفی برای این نمونه شناسه تماس گی�
 #: views/grid.php:4
 msgid "What is Set CID?"
 msgstr "تنظیم CID چیست؟"
+
+#~ msgid "Add CallerID"
+#~ msgstr "افزودن شناسه تماس گیرنده"
+
+#~ msgid "Add CallerID Instance"
+#~ msgstr "افزودن نمونه شناسه تماس گیرنده"
+
+#~ msgid "Edit"
+#~ msgstr "ویرایش"
+
+#~ msgid "Edit CallerID Instance"
+#~ msgstr "ویرایش نمونه شناسه تماس گیرنده"
+
+#~ msgid "Edit: "
+#~ msgstr "ویرایش ： "
+
+#~ msgid "Invalid description specified"
+#~ msgstr "توضیحات نامعتبر"
+
+#~ msgid ""
+#~ "Set CallerID allows you to change the caller id of the call and then "
+#~ "continue on to the desired destination. For example, you may want to "
+#~ "change the caller id form \"John Doe\" to \"Sales: John Doe\". Please "
+#~ "note, the text you enter is what the callerid is changed to. To append to "
+#~ "the current callerid, use the proper asterisk variables, such as "
+#~ "\"${CALLERID(name)}\" for the currently set callerid name and \"${CALLERID"
+#~ "(num)}\" for the currently set callerid number."
+#~ msgstr ""
+#~ "تنظیم شناسه تماس به شما اجازه میدهد تا پس از تغییر شناسه تماس گیرنده، آن "
+#~ "را به مقصد مورد نظر هدایت نمایید. به عنوان مثال، ممکن است شما بخواهید "
+#~ "شناسه تماس گیرنده را از \" محمد محمدی\" به \"فروش:محمد محمدی\" تغییر "
+#~ "دهید. لطفا توجه داشته باشید، متن وارد شده به عنوان شناسه جدید در نظر "
+#~ "گرفته می شود. برای افزودن عباراتی به شناسه تماس فعلی، از متغیرهای استریسک "
+#~ "استفاده کنید. برای مثال \"${CALLERID(name)}\" برای نام شناسه تماس گیرنده "
+#~ "فعلی و \"${CALLERID(num)}\" برای شماره شناسه تماس گیرنده فعلی."
+
+#~ msgid "Submit Changes"
+#~ msgstr "ثبت تغییرات"
+
+#~ msgid ""
+#~ "The CallerID Name that you want to change to. If you are appending to the "
+#~ "current callerid, dont forget to include the appropriate asterisk "
+#~ "variables. If you leave this box blank, the CallerID name will be blanked"
+#~ msgstr ""
+#~ "نام شناسه تماس گیرنده ای که می خواهید تغییر دهید. اگر قصد افزودن عباراتی "
+#~ "به شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید"
+
+#~ msgid ""
+#~ "The CallerID Number that you want to change to. If you are appending to "
+#~ "the current callerid, dont forget to include the appropriate asterisk "
+#~ "variables. If you leave this box blank, the CallerID number will be "
+#~ "blanked"
+#~ msgstr ""
+#~ "شماره شناسه تماس گیرنده ای که می خواهید تغییر دهید. اگر قصد افزودن "
+#~ "عباراتی به شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید"
