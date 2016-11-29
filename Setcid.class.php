@@ -45,10 +45,12 @@ class Setcid implements \BMO {
 		if(isset($_REQUEST['action'])) {
 			if($_REQUEST['action'] == "delete") {
 				$this->delete($_REQUEST['id']);
+				\needreload();
 			} elseif($_REQUEST['action'] == "save") {
 				$id = !empty($_REQUEST['id']) ? $_REQUEST['id'] : null;
 				$goto = $_REQUEST[$_REQUEST['goto0'].'0'];
 				$this->update($id, $_REQUEST['description'], $_REQUEST['cid_name'], $_REQUEST['cid_num'], $goto);
+				\needreload();
 			}
 		}
 		$view = !empty($_REQUEST['view']) ? $_REQUEST['view'] : "";
