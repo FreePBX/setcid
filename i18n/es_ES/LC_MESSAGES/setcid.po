@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-29 10:56-0800\n"
-"PO-Revision-Date: 2016-12-10 22:37+0200\n"
+"PO-Revision-Date: 2016-12-11 06:10+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/es_ES/>\n"
@@ -31,7 +31,7 @@ msgstr "Añadir"
 
 #: views/form.php:2
 msgid "Add CID"
-msgstr ""
+msgstr "Agregar CID"
 
 #: setcid.i18n.php:8 views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
@@ -50,6 +50,12 @@ msgid ""
 "appropriate variables. If you leave this box blank, the caller ID number "
 "will be blank. Default caller ID number variable: ${CALLERID(num)}"
 msgstr ""
+"Número de Identificador de Llamada: El número de Identificador de Llamada se "
+"cambiará a este. Si está agregando al número de identificación del llamante "
+"actual, no olvide incluir las variables apropiadas. Si deja esta casilla en "
+"blanco, el número de identificación de la persona que llama estará en "
+"blanco. Variable predeterminada del número de identificador de llamada: $ {"
+"CALLERID (num)}"
 
 #: views/form.php:34
 msgid "CallerID Name"
@@ -73,24 +79,24 @@ msgstr "Destino"
 
 #: views/form.php:84
 msgid "Destination to send the call to after CID has been processed"
-msgstr ""
+msgstr "Destino para enviar la llamada después de que CID se haya procesado"
 
 #: views/form.php:2
 #, php-format
 msgid "Edit CID: %s"
-msgstr ""
+msgstr "Editar CID: %s"
 
 #: views/rnav.php:3
 msgid "List SetCID"
-msgstr ""
+msgstr "Lista SetCID"
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Reinicio"
 
 #: views/main.php:4
 msgid "Set CID"
-msgstr ""
+msgstr "Establecer CID"
 
 #: setcid.i18n.php:4 setcid.i18n.php:10
 msgid "Set CallerID"
@@ -103,7 +109,7 @@ msgstr "Configurar ID de llamada %s: "
 
 #: views/rnav.php:14
 msgid "SetCID"
-msgstr ""
+msgstr "SetCID"
 
 #: Setcid.class.php:123
 msgid "Submit"
@@ -116,6 +122,11 @@ msgid ""
 "If you leave this box blank, the caller ID name will be blank. Default "
 "caller ID name variable: ${CALLERID(name)}"
 msgstr ""
+"El nombre del identificador de llamadas se cambiará a éste. Si está "
+"agregando al nombre actual del identificador de llamadas, no olvide incluir "
+"las variables apropiadas. Si deja esta casilla en blanco, el nombre del "
+"identificador de llamada quedará en blanco. Variable de nombre de "
+"identificador de llamada predeterminada: $ {CALLERID (name)}"
 
 #: views/form.php:24
 msgid ""
@@ -126,7 +137,7 @@ msgstr ""
 
 #: views/grid.php:4
 msgid "What is Set CID?"
-msgstr ""
+msgstr "Cual es CID?"
 
 #~ msgid "Add CallerID"
 #~ msgstr "Agregar ID de llamada"
