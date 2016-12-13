@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-29 10:56-0800\n"
-"PO-Revision-Date: 2016-12-12 21:52+0200\n"
+"PO-Revision-Date: 2016-12-12 23:27+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/pt_BR/>\n"
@@ -27,7 +27,7 @@ msgstr "Ações"
 
 #: views/grid.php:12 views/rnav.php:2
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #: views/form.php:2
 msgid "Add CID"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: views/form.php:74
 msgid "Destination"
-msgstr ""
+msgstr "Destino"
 
 #: views/form.php:84
 msgid "Destination to send the call to after CID has been processed"
