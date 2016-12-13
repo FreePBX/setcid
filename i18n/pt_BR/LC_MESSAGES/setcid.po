@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-29 10:56-0800\n"
-"PO-Revision-Date: 2016-12-12 04:43+0200\n"
+"PO-Revision-Date: 2016-12-12 21:52+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/pt_BR/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: setcid.i18n.php:6 setcid.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 #: views/form.php:64
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: Setcid.class.php:113
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 #: views/form.php:14 views/grid.php:17
 msgid "Description"
@@ -84,7 +84,7 @@ msgstr ""
 
 #: Setcid.class.php:118
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: views/main.php:4
 msgid "Set CID"
@@ -105,7 +105,7 @@ msgstr ""
 
 #: Setcid.class.php:123
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/form.php:44
 msgid ""
