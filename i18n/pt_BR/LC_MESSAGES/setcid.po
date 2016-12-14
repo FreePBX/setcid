@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-29 10:56-0800\n"
-"PO-Revision-Date: 2016-12-12 23:27+0200\n"
+"PO-Revision-Date: 2016-12-13 21:54+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/pt_BR/>\n"
@@ -63,7 +63,7 @@ msgstr "Apagar"
 
 #: views/form.php:14 views/grid.php:17
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: views/form.php:74
 msgid "Destination"
