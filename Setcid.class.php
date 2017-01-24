@@ -92,12 +92,14 @@ class Setcid implements \BMO {
 	public function update($id=null, $description, $name, $number, $dest) {
 		$sql = "REPLACE INTO setcid (cid_id, description, cid_name, cid_num, dest) VALUES (?, ?, ?, ?, ?)";
 		$sth = $this->db->prepare($sql);
+		needreload();
 		return $sth->execute(array($id, $description, $name, $number, $dest));
 	}
 
 	public function delete($id) {
 		$sql = "DELETE FROM setcid WHERE cid_id = ?";
 		$sth = $this->db->prepare($sql);
+		needreload();
 		return $sth->execute(array($id));
 	}
 
