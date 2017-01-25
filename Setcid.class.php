@@ -45,12 +45,12 @@ class Setcid implements \BMO {
 		if(isset($_REQUEST['action'])) {
 			if($_REQUEST['action'] == "delete") {
 				$this->delete($_REQUEST['id']);
-				\needreload();
+				needreload();
 			} elseif($_REQUEST['action'] == "save") {
 				$id = !empty($_REQUEST['id']) ? $_REQUEST['id'] : null;
 				$goto = $_REQUEST[$_REQUEST['goto0'].'0'];
 				$this->update($id, $_REQUEST['description'], $_REQUEST['cid_name'], $_REQUEST['cid_num'], $goto);
-				\needreload();
+				needreload();
 			}
 		}
 		$view = !empty($_REQUEST['view']) ? $_REQUEST['view'] : "";
@@ -92,14 +92,12 @@ class Setcid implements \BMO {
 	public function update($id=null, $description, $name, $number, $dest) {
 		$sql = "REPLACE INTO setcid (cid_id, description, cid_name, cid_num, dest) VALUES (?, ?, ?, ?, ?)";
 		$sth = $this->db->prepare($sql);
-		needreload();
 		return $sth->execute(array($id, $description, $name, $number, $dest));
 	}
 
 	public function delete($id) {
 		$sql = "DELETE FROM setcid WHERE cid_id = ?";
 		$sth = $this->db->prepare($sql);
-		needreload();
 		return $sth->execute(array($id));
 	}
 
