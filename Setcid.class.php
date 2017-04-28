@@ -54,9 +54,11 @@ class Setcid implements \BMO {
 			}
 		}
 		$view = !empty($_REQUEST['view']) ? $_REQUEST['view'] : "";
+		$usage_list = '';
 		switch($view) {
 			case "form":
 				if(isset($_REQUEST['id'])) {
+					$usage_list = framework_display_destination_usage(setcid_getdest($_REQUEST['id']));
 					$item = $this->get($_REQUEST['id']);
 				} else {
 					$item = array(
@@ -70,7 +72,7 @@ class Setcid implements \BMO {
 				$content = load_view(__DIR__."/views/grid.php",array());
 			break;
 		}
-		return load_view(__DIR__."/views/main.php",array("content" => $content));
+		return load_view(__DIR__."/views/main.php",array("content" => $content, "usage_list" => $usage_list));
 	}
 
 	public function getAll() {
