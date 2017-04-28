@@ -34,7 +34,7 @@ class Setcid implements \BMO {
 			case "getable":
 				$cids = $this->getAll();
 				foreach($cids as &$cid) {
-					$cid['actions'] = '<a href="?display=setcid&amp;view=form&amp;id='.$cid['cid_id'].'"><i class="fa fa-pencil-square-o"></i></i></a> <a href="?display=setcid&amp;action=delete&amp;id='.$cid['cid_id'].'"><i class="fa fa-trash-o"></i></a>';
+					$cid['actions'] = '<a href="?display=setcid&amp;view=form&amp;id='.$cid['cid_id'].'"><i class="fa fa-edit"></i></i></a> <a href="?display=setcid&amp;action=delete&amp;id='.$cid['cid_id'].'"><i class="fa fa-trash"></i></a>';
 				}
 				return $cids;
 			break;
