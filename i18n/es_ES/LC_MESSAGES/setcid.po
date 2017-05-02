@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 10:56-0800\n"
+"POT-Creation-Date: 2017-05-01 22:03-0400\n"
 "PO-Revision-Date: 2016-12-11 06:10+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/setcid/"
+"es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -39,7 +39,7 @@ msgstr ""
 "Añade la posibilidad de cambiar el identificador de llamadas dentro de un "
 "flujo de llamadas."
 
-#: setcid.i18n.php:6 setcid.i18n.php:12
+#: setcid.i18n.php:6
 msgid "Applications"
 msgstr "Aplicaciones"
 
@@ -54,8 +54,8 @@ msgstr ""
 "cambiará a este. Si está agregando al número de identificación del llamante "
 "actual, no olvide incluir las variables apropiadas. Si deja esta casilla en "
 "blanco, el número de identificación de la persona que llama estará en "
-"blanco. Variable predeterminada del número de identificador de llamada: $ {"
-"CALLERID (num)}"
+"blanco. Variable predeterminada del número de identificador de llamada: $ "
+"{CALLERID (num)}"
 
 #: views/form.php:34
 msgid "CallerID Name"
@@ -65,7 +65,7 @@ msgstr "Nombre Llamante"
 msgid "CallerID Number"
 msgstr "Número ID Llamante"
 
-#: Setcid.class.php:113
+#: Setcid.class.php:115
 msgid "Delete"
 msgstr "Borrar"
 
@@ -90,7 +90,7 @@ msgstr "Editar CID: %s"
 msgid "List SetCID"
 msgstr "Lista SetCID"
 
-#: Setcid.class.php:118
+#: Setcid.class.php:120
 msgid "Reset"
 msgstr "Reinicio"
 
@@ -111,7 +111,7 @@ msgstr "Configurar ID de llamada %s: "
 msgid "SetCID"
 msgstr "SetCID"
 
-#: Setcid.class.php:123
+#: Setcid.class.php:125
 msgid "Submit"
 msgstr "Enviar"
 

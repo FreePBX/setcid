@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 10:56-0800\n"
+"POT-Creation-Date: 2017-05-01 22:03-0400\n"
 "PO-Revision-Date: 2016-05-09 03:18+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/setcid/"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr ""
 
-#: setcid.i18n.php:6 setcid.i18n.php:12
+#: setcid.i18n.php:6
 msgid "Applications"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "CallerID Number"
 msgstr ""
 
-#: Setcid.class.php:113
+#: Setcid.class.php:115
 msgid "Delete"
 msgstr "מחיקה"
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "List SetCID"
 msgstr ""
 
-#: Setcid.class.php:118
+#: Setcid.class.php:120
 msgid "Reset"
 msgstr "איפוס"
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid "SetCID"
 msgstr ""
 
-#: Setcid.class.php:123
+#: Setcid.class.php:125
 msgid "Submit"
 msgstr "שלח"
 

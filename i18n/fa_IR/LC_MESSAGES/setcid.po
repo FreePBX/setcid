@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 10:56-0800\n"
+"POT-Creation-Date: 2017-05-01 22:03-0400\n"
 "PO-Revision-Date: 2016-10-08 12:44+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,7 +37,7 @@ msgstr "افزودن CID"
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr "افزودن قابلیت تغییر شناسه تماس گیرنده در جریان یک تماس."
 
-#: setcid.i18n.php:6 setcid.i18n.php:12
+#: setcid.i18n.php:6
 msgid "Applications"
 msgstr "برنامه ها"
 
@@ -61,7 +61,7 @@ msgstr "نام شناسه تماس گیرنده"
 msgid "CallerID Number"
 msgstr "شماره تماس گیرنده"
 
-#: Setcid.class.php:113
+#: Setcid.class.php:115
 msgid "Delete"
 msgstr "حذف"
 
@@ -86,7 +86,7 @@ msgstr "ویرایش CID:%s"
 msgid "List SetCID"
 msgstr "فهرست SetCID"
 
-#: Setcid.class.php:118
+#: Setcid.class.php:120
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -107,7 +107,7 @@ msgstr "تنظیم شناسه تماس گیرنده %s: "
 msgid "SetCID"
 msgstr "تنظیم شماره تماس"
 
-#: Setcid.class.php:123
+#: Setcid.class.php:125
 msgid "Submit"
 msgstr "ثبت"
 

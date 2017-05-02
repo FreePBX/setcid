@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 10:56-0800\n"
+"POT-Creation-Date: 2017-05-01 22:03-0400\n"
 "PO-Revision-Date: 2017-03-13 14:14+0200\n"
 "Last-Translator: Nicolas <freepbx@riendeau.org>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/fr_FR/>\n"
-"Language: fr_FR\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/setcid/"
+"fr_FR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr ""
 
-#: setcid.i18n.php:6 setcid.i18n.php:12
+#: setcid.i18n.php:6
 msgid "Applications"
 msgstr "Applications"
 
@@ -57,7 +57,7 @@ msgstr ""
 msgid "CallerID Number"
 msgstr "Numéro de l'appelant"
 
-#: Setcid.class.php:113
+#: Setcid.class.php:115
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -82,7 +82,7 @@ msgstr "Éditer ID appelant : %s"
 msgid "List SetCID"
 msgstr ""
 
-#: Setcid.class.php:118
+#: Setcid.class.php:120
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -103,7 +103,7 @@ msgstr ""
 msgid "SetCID"
 msgstr ""
 
-#: Setcid.class.php:123
+#: Setcid.class.php:125
 msgid "Submit"
 msgstr "Soumettre"
 

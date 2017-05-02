@@ -32,7 +32,7 @@
 		*2.9.0.0* 2.9 version moved to repo
 	</changelog>
 	<depends>
-		<version>13.0.6</version>
+		<version>13.0.191.12</version>
 	</depends>
 	<supported>
 		<version>13.0</version>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 10:56-0800\n"
+"POT-Creation-Date: 2017-05-01 22:03-0400\n"
 "PO-Revision-Date: 2016-07-07 11:27+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com.com>\n"
 "Language-Team: Russian <http://weblate.postmet.com/freepbx/trunkbalance/"
@@ -36,7 +36,7 @@ msgstr "Добавить CID"
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr "Добавляет возможность изменения CallerID во время прохождения вызова."
 
-#: setcid.i18n.php:6 setcid.i18n.php:12
+#: setcid.i18n.php:6
 msgid "Applications"
 msgstr "Приложения"
 
@@ -61,7 +61,7 @@ msgstr "Имя CallerID"
 msgid "CallerID Number"
 msgstr "Номер CallerID"
 
-#: Setcid.class.php:113
+#: Setcid.class.php:115
 msgid "Delete"
 msgstr "Удалить"
 
@@ -86,7 +86,7 @@ msgstr "Редактировать CID: %s"
 msgid "List SetCID"
 msgstr ""
 
-#: Setcid.class.php:118
+#: Setcid.class.php:120
 msgid "Reset"
 msgstr "Сброс"
 
@@ -107,7 +107,7 @@ msgstr "Установить CallerID %s: "
 msgid "SetCID"
 msgstr ""
 
-#: Setcid.class.php:123
+#: Setcid.class.php:125
 msgid "Submit"
 msgstr "Подтвердить"
 

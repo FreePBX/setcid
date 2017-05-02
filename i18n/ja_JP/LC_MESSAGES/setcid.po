@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-29 10:56-0800\n"
+"POT-Creation-Date: 2017-05-01 22:03-0400\n"
 "PO-Revision-Date: 2015-10-27 12:57+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/setcid/"
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Adds the ability to change the CallerID within a call flow."
 msgstr "コールフローの機能を追加して発信者IDの変更を可能にする"
 
-#: setcid.i18n.php:6 setcid.i18n.php:12
+#: setcid.i18n.php:6
 msgid "Applications"
 msgstr "アプリケーション"
 
@@ -85,7 +85,7 @@ msgstr "CallerID Name"
 msgid "CallerID Number"
 msgstr "CallerID番号"
 
-#: Setcid.class.php:113
+#: Setcid.class.php:115
 msgid "Delete"
 msgstr "削除"
 
@@ -110,7 +110,7 @@ msgstr ""
 msgid "List SetCID"
 msgstr ""
 
-#: Setcid.class.php:118
+#: Setcid.class.php:120
 msgid "Reset"
 msgstr "リセット"
 
@@ -131,7 +131,7 @@ msgstr "発信者IDに%sを設定しました"
 msgid "SetCID"
 msgstr ""
 
-#: Setcid.class.php:123
+#: Setcid.class.php:125
 msgid "Submit"
 msgstr "送信"
 
