@@ -2,7 +2,7 @@
 	<rawname>setcid</rawname>
 	<repo>standard</repo>
 	<name>Set CallerID</name>
-	<version>13.0.5.1</version>
+	<version>13.0.6</version>
 	<category>Applications</category>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -14,6 +14,7 @@
 		<setcid>Set CallerID</setcid>
 	</menuitems>
 	<changelog>
+		*13.0.6* FREEPBX-12690 Restore usage info
 		*13.0.5.1* FREEPBX-13519 Set CallerID Module - Apply Changes red button doesnt appear
 		*13.0.5* Update Language
 		*13.0.4* Slideout rnav

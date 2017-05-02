@@ -58,7 +58,7 @@ class Setcid implements \BMO {
 		switch($view) {
 			case "form":
 				if(isset($_REQUEST['id'])) {
-					$usage_list = framework_display_destination_usage(setcid_getdest($_REQUEST['id']));
+					$usage_list = $this->FreePBX->View->destinationUsage(setcid_getdest($_REQUEST['id']));
 					$item = $this->get($_REQUEST['id']);
 				} else {
 					$item = array(
