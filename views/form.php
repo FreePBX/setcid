@@ -1,8 +1,27 @@
+<?php
+$setcid_list = \FreePBX::Setcid()->getAll();
+if($setcid_list){
+	$setcid_descriptions = array();
+        	foreach($setcid_list as $tmp_setcid){
+                	if($item['cid_id'] !=  $tmp_setcid['cid_id']){
+                        	$setcid_descriptions[] = $tmp_setcid['description'];
+                	}
+		}
+}
+?>
+<script>
+var setcid_descriptions = [];
+<?php
+if(!empty($setcid_descriptions)){
+	echo "setcid_descriptions = " . json_encode($setcid_descriptions) . ";";
+}
+?>
+</script>
 <h3>
 	<?php echo !empty($item['cid_id']) ? sprintf(_("Edit CID: %s"),$item['cid_id']) : _("Add CID")?>
 </h3>
 <div class="display full-border">
-	<form class="fpbx-submit" action="?display=setcid" method="post" <?php if(isset($item['cid_id'])) {?>data-fpbx-delete="?display=setcid&amp;action=delete&amp;id=<?php echo $item['cid_id']?><?php }?>">
+	<form class="fpbx-submit" name="setcid" action="?display=setcid" method="post" <?php if(isset($item['cid_id'])) {?>data-fpbx-delete="?display=setcid&amp;action=delete&amp;id=<?php echo $item['cid_id']?><?php }?>">
 		<input type="hidden" name="id" value="<?php echo isset($item['cid_id']) ? $item['cid_id'] : ""?>">
 		<input type="hidden" name="action" value="save">
 		<div class="element-container">
@@ -14,7 +33,7 @@
 								<label class="control-label" for="description"><?php echo _('Description')?></label>
 								<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
 							</div>
-							<div class="col-md-9"><input type="text" name="description" class="form-control" id="description" value="<?php echo !empty($item['description']) ? $item['description'] : ""?>"></div>
+							<div class="col-md-9"><input type="text" name="description" class="form-control" id="description" value="<?php echo !empty($item['description']) ? $item['description'] : ""?>" required data-invalid="Description field is required."></div>
 						</div>
 					</div>
 				</div>
