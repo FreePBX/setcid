@@ -7,18 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-01 22:03-0400\n"
+"POT-Creation-Date: 2017-06-23 19:54-0400\n"
 "PO-Revision-Date: 2017-05-17 02:01+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
-"Language-Team: Russian "
-"<http://weblate.freepbx.org/projects/freepbx/setcid/ru_RU/>\n"
-"Language: ru_RU\n"
+"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/setcid/"
+"ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.4\n"
+
+#: assets/js/setcid.js:9
+msgid " already used, please use a different Description."
+msgstr ""
 
 #: views/grid.php:18
 msgid "Actions"
@@ -28,7 +32,7 @@ msgstr "Действия"
 msgid "Add"
 msgstr "Добавить"
 
-#: views/form.php:2
+#: views/form.php:21
 msgid "Add CID"
 msgstr "Добавить CID"
 
@@ -40,7 +44,7 @@ msgstr "Добавляет возможность изменения CallerID в
 msgid "Applications"
 msgstr "Приложения"
 
-#: views/form.php:64
+#: views/form.php:83
 msgid ""
 "Caller ID Number: The caller ID number will be changed to this. If you are "
 "appending to the current caller ID number, don't forget to include the "
@@ -53,11 +57,11 @@ msgstr ""
 "CallerID номера будет пустым. Переменная CallerID номера по умолчанию: "
 "${CALLERID(num)}"
 
-#: views/form.php:34
+#: views/form.php:53
 msgid "CallerID Name"
 msgstr "Имя CallerID"
 
-#: views/form.php:54
+#: views/form.php:73
 msgid "CallerID Number"
 msgstr "Номер CallerID"
 
@@ -65,25 +69,29 @@ msgstr "Номер CallerID"
 msgid "Delete"
 msgstr "Удалить"
 
-#: views/form.php:14 views/grid.php:17
+#: views/form.php:33 views/grid.php:17
 msgid "Description"
 msgstr "Описание"
 
-#: views/form.php:74
+#: views/form.php:93
 msgid "Destination"
 msgstr "Назначение"
 
-#: views/form.php:84
+#: views/form.php:103
 msgid "Destination to send the call to after CID has been processed"
 msgstr "Направление куда отправить звонок после обработки CID"
 
-#: views/form.php:2
+#: views/form.php:21
 #, php-format
 msgid "Edit CID: %s"
 msgstr "Редактировать CID: %s"
 
 #: views/rnav.php:3
 msgid "List SetCID"
+msgstr ""
+
+#: assets/js/setcid.js:6
+msgid "Please enter a valid Description."
 msgstr ""
 
 #: Setcid.class.php:120
@@ -111,7 +119,7 @@ msgstr ""
 msgid "Submit"
 msgstr "Сохранить"
 
-#: views/form.php:44
+#: views/form.php:63
 msgid ""
 "The caller ID name will be changed to this. If you are appending to the "
 "current caller ID name, don't forget to include the appropriate variables. "
@@ -124,7 +132,7 @@ msgstr ""
 "CallerID имени будет пустым. Переменная CallerID имени по умолчанию: "
 "${CALLERID(name)}"
 
-#: views/form.php:24
+#: views/form.php:43
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""

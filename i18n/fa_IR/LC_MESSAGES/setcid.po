@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-01 22:03-0400\n"
+"POT-Creation-Date: 2017-06-23 19:54-0400\n"
 "PO-Revision-Date: 2016-10-08 12:44+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,6 +21,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
+#: assets/js/setcid.js:9
+msgid " already used, please use a different Description."
+msgstr ""
+
 #: views/grid.php:18
 msgid "Actions"
 msgstr "عملیات"
@@ -29,7 +33,7 @@ msgstr "عملیات"
 msgid "Add"
 msgstr "افزودن"
 
-#: views/form.php:2
+#: views/form.php:21
 msgid "Add CID"
 msgstr "افزودن CID"
 
@@ -41,7 +45,7 @@ msgstr "افزودن قابلیت تغییر شناسه تماس گیرنده د
 msgid "Applications"
 msgstr "برنامه ها"
 
-#: views/form.php:64
+#: views/form.php:83
 msgid ""
 "Caller ID Number: The caller ID number will be changed to this. If you are "
 "appending to the current caller ID number, don't forget to include the "
@@ -53,11 +57,11 @@ msgstr ""
 "نکنید. اگر این قسمت را خالی بگذارید، شماره تماس گیرنده خالی خواهد بود. متغیر "
 "پیش فرض شماره تماس گیرنده: ${CALLERID(num)}"
 
-#: views/form.php:34
+#: views/form.php:53
 msgid "CallerID Name"
 msgstr "نام شناسه تماس گیرنده"
 
-#: views/form.php:54
+#: views/form.php:73
 msgid "CallerID Number"
 msgstr "شماره تماس گیرنده"
 
@@ -65,19 +69,19 @@ msgstr "شماره تماس گیرنده"
 msgid "Delete"
 msgstr "حذف"
 
-#: views/form.php:14 views/grid.php:17
+#: views/form.php:33 views/grid.php:17
 msgid "Description"
 msgstr "توضیحات"
 
-#: views/form.php:74
+#: views/form.php:93
 msgid "Destination"
 msgstr "مقصد"
 
-#: views/form.php:84
+#: views/form.php:103
 msgid "Destination to send the call to after CID has been processed"
 msgstr "مقصدی که تماس پس از پردازش CID به آن ارسال می شود"
 
-#: views/form.php:2
+#: views/form.php:21
 #, php-format
 msgid "Edit CID: %s"
 msgstr "ویرایش CID:%s"
@@ -85,6 +89,10 @@ msgstr "ویرایش CID:%s"
 #: views/rnav.php:3
 msgid "List SetCID"
 msgstr "فهرست SetCID"
+
+#: assets/js/setcid.js:6
+msgid "Please enter a valid Description."
+msgstr ""
 
 #: Setcid.class.php:120
 msgid "Reset"
@@ -111,7 +119,7 @@ msgstr "تنظیم شماره تماس"
 msgid "Submit"
 msgstr "ثبت"
 
-#: views/form.php:44
+#: views/form.php:63
 msgid ""
 "The caller ID name will be changed to this. If you are appending to the "
 "current caller ID name, don't forget to include the appropriate variables. "
@@ -122,7 +130,7 @@ msgstr ""
 "عباراتی به شناسه فعلی را دارید، می بایست از متغیرهای استریسک استفاده کنید. "
 "نام شناسه تماس گیرنده به صورت پیش فرض: ${CALLERID(name)}"
 
-#: views/form.php:24
+#: views/form.php:43
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr "نام توصیفی برای این نمونه شناسه تماس گیرنده. مثال \"نام جدید\""

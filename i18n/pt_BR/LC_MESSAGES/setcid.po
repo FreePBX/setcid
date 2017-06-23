@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-01 22:03-0400\n"
+"POT-Creation-Date: 2017-06-23 19:54-0400\n"
 "PO-Revision-Date: 2017-02-14 17:03+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -21,6 +21,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
+#: assets/js/setcid.js:9
+msgid " already used, please use a different Description."
+msgstr ""
+
 #: views/grid.php:18
 msgid "Actions"
 msgstr "Ações"
@@ -29,7 +33,7 @@ msgstr "Ações"
 msgid "Add"
 msgstr "Adicionar"
 
-#: views/form.php:2
+#: views/form.php:21
 msgid "Add CID"
 msgstr "Adicionar CID"
 
@@ -43,7 +47,7 @@ msgstr ""
 msgid "Applications"
 msgstr "Aplicações"
 
-#: views/form.php:64
+#: views/form.php:83
 msgid ""
 "Caller ID Number: The caller ID number will be changed to this. If you are "
 "appending to the current caller ID number, don't forget to include the "
@@ -57,11 +61,11 @@ msgstr ""
 "do chamador ficará em branco. Variável do número de identificação do "
 "chamador padrão: ${CALLERID(num)}"
 
-#: views/form.php:34
+#: views/form.php:53
 msgid "CallerID Name"
 msgstr "Nome do ID Chamador"
 
-#: views/form.php:54
+#: views/form.php:73
 msgid "CallerID Number"
 msgstr "Número do ID Chamador"
 
@@ -69,19 +73,19 @@ msgstr "Número do ID Chamador"
 msgid "Delete"
 msgstr "Apagar"
 
-#: views/form.php:14 views/grid.php:17
+#: views/form.php:33 views/grid.php:17
 msgid "Description"
 msgstr "Descrição"
 
-#: views/form.php:74
+#: views/form.php:93
 msgid "Destination"
 msgstr "Destino"
 
-#: views/form.php:84
+#: views/form.php:103
 msgid "Destination to send the call to after CID has been processed"
 msgstr "Destino para enviar a chamada depois que o CID for processado"
 
-#: views/form.php:2
+#: views/form.php:21
 #, php-format
 msgid "Edit CID: %s"
 msgstr "Editar CID: %s"
@@ -89,6 +93,10 @@ msgstr "Editar CID: %s"
 #: views/rnav.php:3
 msgid "List SetCID"
 msgstr "Lista SetCID"
+
+#: assets/js/setcid.js:6
+msgid "Please enter a valid Description."
+msgstr ""
 
 #: Setcid.class.php:120
 msgid "Reset"
@@ -115,7 +123,7 @@ msgstr "SetCID"
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:44
+#: views/form.php:63
 msgid ""
 "The caller ID name will be changed to this. If you are appending to the "
 "current caller ID name, don't forget to include the appropriate variables. "
@@ -128,7 +136,7 @@ msgstr ""
 "identificação do chamador ficará em branco. Variável de nome da "
 "identificação do chamador padrão: ${CALLERID(name)}"
 
-#: views/form.php:24
+#: views/form.php:43
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""

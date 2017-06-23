@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-01 22:03-0400\n"
+"POT-Creation-Date: 2017-06-23 19:54-0400\n"
 "PO-Revision-Date: 2015-11-23 13:52+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -21,6 +21,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
+#: assets/js/setcid.js:9
+msgid " already used, please use a different Description."
+msgstr ""
+
 #: views/grid.php:18
 msgid "Actions"
 msgstr "操作"
@@ -29,7 +33,7 @@ msgstr "操作"
 msgid "Add"
 msgstr "添加"
 
-#: views/form.php:2
+#: views/form.php:21
 msgid "Add CID"
 msgstr ""
 
@@ -41,7 +45,7 @@ msgstr "添加修改来电显示策略"
 msgid "Applications"
 msgstr "应用配置"
 
-#: views/form.php:64
+#: views/form.php:83
 msgid ""
 "Caller ID Number: The caller ID number will be changed to this. If you are "
 "appending to the current caller ID number, don't forget to include the "
@@ -49,11 +53,11 @@ msgid ""
 "will be blank. Default caller ID number variable: ${CALLERID(num)}"
 msgstr ""
 
-#: views/form.php:34
+#: views/form.php:53
 msgid "CallerID Name"
 msgstr ""
 
-#: views/form.php:54
+#: views/form.php:73
 msgid "CallerID Number"
 msgstr ""
 
@@ -61,25 +65,29 @@ msgstr ""
 msgid "Delete"
 msgstr "删除"
 
-#: views/form.php:14 views/grid.php:17
+#: views/form.php:33 views/grid.php:17
 msgid "Description"
 msgstr "描述"
 
-#: views/form.php:74
+#: views/form.php:93
 msgid "Destination"
 msgstr "目的地"
 
-#: views/form.php:84
+#: views/form.php:103
 msgid "Destination to send the call to after CID has been processed"
 msgstr ""
 
-#: views/form.php:2
+#: views/form.php:21
 #, php-format
 msgid "Edit CID: %s"
 msgstr ""
 
 #: views/rnav.php:3
 msgid "List SetCID"
+msgstr ""
+
+#: assets/js/setcid.js:6
+msgid "Please enter a valid Description."
 msgstr ""
 
 #: Setcid.class.php:120
@@ -107,7 +115,7 @@ msgstr ""
 msgid "Submit"
 msgstr "提交"
 
-#: views/form.php:44
+#: views/form.php:63
 msgid ""
 "The caller ID name will be changed to this. If you are appending to the "
 "current caller ID name, don't forget to include the appropriate variables. "
@@ -115,7 +123,7 @@ msgid ""
 "caller ID name variable: ${CALLERID(name)}"
 msgstr ""
 
-#: views/form.php:24
+#: views/form.php:43
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
 msgstr ""
