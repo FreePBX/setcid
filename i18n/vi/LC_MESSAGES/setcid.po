@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-23 19:54-0400\n"
-"PO-Revision-Date: 2017-07-14 08:54+0200\n"
+"PO-Revision-Date: 2017-07-14 09:01+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/vi/>\n"
@@ -27,7 +27,7 @@ msgstr " đã được sử dụng, vui lòng sử dụng một mô tả khác."
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr "Các tháo tác"
+msgstr "Các thao tác"
 
 #: views/grid.php:12 views/rnav.php:2
 msgid "Add"
