@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:54-0400\n"
+"POT-Creation-Date: 2017-07-18 17:42-0400\n"
 "PO-Revision-Date: 2017-02-14 17:03+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -96,6 +96,10 @@ msgstr "Lista SetCID"
 
 #: assets/js/setcid.js:6
 msgid "Please enter a valid Description."
+msgstr ""
+
+#: assets/js/setcid.js:13
+msgid "Please select an item."
 msgstr ""
 
 #: Setcid.class.php:120
