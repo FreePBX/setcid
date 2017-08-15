@@ -11,7 +11,7 @@
 		Adds the ability to change the CallerID within a call flow.
 	</description>
 	<menuitems>
-		<setcid>Set CallerID</setcid>
+		<setcid needsenginedb="yes">Set CallerID</setcid>
 	</menuitems>
 	<changelog>
 		*13.0.6.2* FREEPBX-14874 Set CID can be created with Empty/Duplicate Description and Empty Destination Field values.
