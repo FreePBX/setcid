@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-18 17:42-0400\n"
-"PO-Revision-Date: 2017-12-01 18:24+0200\n"
+"PO-Revision-Date: 2017-12-01 23:43+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/setcid/fr_FR/>\n"
@@ -117,7 +117,7 @@ msgstr ""
 
 #: Setcid.class.php:125
 msgid "Submit"
-msgstr "Soumettre"
+msgstr "Valider"
 
 #: views/form.php:63
 msgid ""
