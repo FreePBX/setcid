@@ -4,20 +4,14 @@
  * Set CID
  */
 namespace FreePBX\modules;
-class Setcid implements \BMO {
-	public function __construct($freepbx = null) {
-		if ($freepbx == null) {
-			throw new \Exception("Not given a FreePBX Object");
-		}
+use BMO;
+use FreePBX_Helpers;
+use PDO;
+class Setcid extends FreePBX_Helpers implements BMO {
 
-		$this->FreePBX = $freepbx;
-		$this->db = $freepbx->Database;
-	}
 
 	public function install() {}
 	public function uninstall() {}
-	public function backup(){}
-	public function restore($backup){}
 	public function doConfigPageInit($display) {}
 
 	public function ajaxRequest($req, &$setting) {
@@ -77,29 +71,29 @@ class Setcid implements \BMO {
 
 	public function getAll() {
 		$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid ORDER BY description ";
-		$sth = $this->db->prepare($sql);
+		$sth = $this->FreePBX->Database->prepare($sql);
 		$sth->execute();
-		$results = $sth->fetchAll(\PDO::FETCH_ASSOC);
+		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 		return !empty($results) ? $results : array();
 	}
 
 	public function get($id) {
 		$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid WHERE cid_id = ?";
-		$sth = $this->db->prepare($sql);
+		$sth = $this->FreePBX->Database->prepare($sql);
 		$sth->execute(array($id));
-		$results = $sth->fetch(\PDO::FETCH_ASSOC);
+		$results = $sth->fetch(PDO::FETCH_ASSOC);
 		return !empty($results) ? $results : array();
 	}
 
 	public function update($id=null, $description, $name, $number, $dest) {
 		$sql = "REPLACE INTO setcid (cid_id, description, cid_name, cid_num, dest) VALUES (?, ?, ?, ?, ?)";
-		$sth = $this->db->prepare($sql);
+		$sth = $this->FreePBX->Database->prepare($sql);
 		return $sth->execute(array($id, $description, $name, $number, $dest));
 	}
 
 	public function delete($id) {
 		$sql = "DELETE FROM setcid WHERE cid_id = ?";
-		$sth = $this->db->prepare($sql);
+		$sth = $this->FreePBX->Database->prepare($sql);
 		return $sth->execute(array($id));
 	}
 
