@@ -26,7 +26,7 @@ class Setcid extends FreePBX_Helpers implements BMO {
 	public function ajaxHandler() {
 		switch($_REQUEST['command']) {
 			case "getable":
-				$cids = $this->getAll();
+				$cids = $this->listAll();
 				foreach($cids as &$cid) {
 					$cid['actions'] = '<a href="?display=setcid&amp;view=form&amp;id='.$cid['cid_id'].'"><i class="fa fa-edit"></i></i></a> <a href="?display=setcid&amp;action=delete&amp;id='.$cid['cid_id'].'"><i class="fa fa-trash"></i></a>';
 				}
@@ -69,7 +69,7 @@ class Setcid extends FreePBX_Helpers implements BMO {
 		return load_view(__DIR__."/views/main.php",array("content" => $content, "usage_list" => $usage_list));
 	}
 
-	public function getAll() {
+	public function listAll() {
 		$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid ORDER BY description ";
 		$sth = $this->FreePBX->Database->prepare($sql);
 		$sth->execute();
