@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>15.0.1</version>
+    <version>15.0.2</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -15,16 +15,17 @@
     </menuitems>
     <database>
         <table name="setcid">
-            <field name="cid_id" type="integer" primarykey="true" autoincrement="true" />
-            <field name="cid_name" type="string" length="150" notnull="false" />
-            <field name="cid_num" type="string" length="150" notnull="false" />
-            <field name="description" type="string" length="50" notnull="false" />
-            <field name="dest" type="string" length="255" notnull="false" />
+            <field name="cid_id" type="integer" primarykey="true" autoincrement="true"/>
+            <field name="cid_name" type="string" length="150" notnull="false"/>
+            <field name="cid_num" type="string" length="150" notnull="false"/>
+            <field name="description" type="string" length="50" notnull="false"/>
+            <field name="dest" type="string" length="255" notnull="false"/>
         </table>
     </database>
     <changelog>
+		*15.0.2* Packaging of ver 15.0.2
         *15.0.1* Backup 15
-    </changelog>
+	</changelog>
     <depends>
         <version>13.0.191.12</version>
     </depends>
