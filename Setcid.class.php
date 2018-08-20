@@ -71,7 +71,7 @@ class Setcid extends FreePBX_Helpers implements BMO {
 
 	public function listAll() {
 		$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid ORDER BY description ";
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		$sth->execute();
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 		return !empty($results) ? $results : array();
@@ -79,7 +79,7 @@ class Setcid extends FreePBX_Helpers implements BMO {
 
 	public function get($id) {
 		$sql = "SELECT cid_id, description, cid_name, cid_num, dest FROM setcid WHERE cid_id = ?";
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		$sth->execute(array($id));
 		$results = $sth->fetch(PDO::FETCH_ASSOC);
 		return !empty($results) ? $results : array();
@@ -87,13 +87,13 @@ class Setcid extends FreePBX_Helpers implements BMO {
 
 	public function update($id=null, $description, $name, $number, $dest) {
 		$sql = "REPLACE INTO setcid (cid_id, description, cid_name, cid_num, dest) VALUES (?, ?, ?, ?, ?)";
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		return $sth->execute(array($id, $description, $name, $number, $dest));
 	}
 
 	public function delete($id) {
 		$sql = "DELETE FROM setcid WHERE cid_id = ?";
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		return $sth->execute(array($id));
 	}
 
@@ -133,4 +133,13 @@ class Setcid extends FreePBX_Helpers implements BMO {
 	  }
 	}
 
+	public function setDatabase($pdo){
+		$this->Database = $pdo;
+		return $this;	
+	}
+	
+	public function resetDatabase(){
+		$this->Database = $this->FreePBX->Database;
+		return $this;
+	}
 }
