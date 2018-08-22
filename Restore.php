@@ -16,10 +16,10 @@ class Restore Extends Base\RestoreBase{
     }
     $bmo = $this->FreePBX->Setcid;
     $bmo->setDatabase($pdo);
-    $configs = $cb->listAll();
+    $configs = $bmo->listAll();
     $bmo->resetDatabase();
     foreach ($configs as $config) {
-      $cb->update($config['cid_id'], $config['description'], $config['name'], $config['number'], $config['dest']);
+      $bmo->update($config['cid_id'], $config['description'], $config['name'], $config['number'], $config['dest']);
     }
     return $this;
   }
