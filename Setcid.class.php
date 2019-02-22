@@ -128,18 +128,8 @@ class Setcid extends FreePBX_Helpers implements BMO {
 		return $buttons;
 	}
 	public function getRightNav($request) {
-	  if(isset($request['view']) && $request['view'] == 'form'){
-	    return load_view(__DIR__."/views/rnav.php",array());
-	  }
-	}
-
-	public function setDatabase($pdo){
-		$this->Database = $pdo;
-		return $this;	
-	}
-	
-	public function resetDatabase(){
-		$this->Database = $this->FreePBX->Database;
-		return $this;
+		if(isset($request['view']) && $request['view'] == 'form'){
+			return load_view(__DIR__."/views/rnav.php",array());
+		}
 	}
 }
