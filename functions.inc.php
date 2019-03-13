@@ -23,7 +23,7 @@ function setcid_get_config($engine) {
 /**  Get a list of all cid
  */
 function setcid_list() {
-	return FreePBX::Setcid()->getAll();
+	return FreePBX::Setcid()->listAll();
 }
 
 function setcid_destinations() {

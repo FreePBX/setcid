@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>15.0.2.2</version>
+    <version>15.0.3</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -23,7 +23,8 @@
         </table>
     </database>
     <changelog>
-		*15.0.2.2* fixing legacy restore 
+        *15.0.3* FREEPBX-19418
+		*15.0.2.2* fixing legacy restore
 		*15.0.2* Packaging of ver 15.0.2
         *15.0.1* Backup 15
 	</changelog>
