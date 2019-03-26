@@ -101,7 +101,7 @@ function setcid_getdestinfo($dest) {
 			return array();
 		} else {
 			return array('description' => sprintf(_("Set CallerID %s: "),$thiscid['description']),
-			             'edit_url' => 'config.php?display=setcid&id='.urlencode($id),
+			             'edit_url' => 'config.php?display=setcid&view=form&id='.urlencode($id),
 								  );
 		}
 	} else {
