@@ -2,7 +2,7 @@
 	<rawname>setcid</rawname>
 	<repo>standard</repo>
 	<name>Set CallerID</name>
-	<version>13.0.6.2</version>
+	<version>13.0.6.3</version>
 	<category>Applications</category>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
@@ -14,6 +14,7 @@
 		<setcid needsenginedb="yes">Set CallerID</setcid>
 	</menuitems>
 	<changelog>
+		*13.0.6.3* Fixing FREEPBX-17867 
 		*13.0.6.2* FREEPBX-14874 Set CID can be created with Empty/Duplicate Description and Empty Destination Field values.
 		*13.0.6.1* FREEPBX-14874 Set CID can be created with Empty/Duplicate Description and Empty Destination Field values
 		*13.0.6* FREEPBX-12690 Restore usage info
