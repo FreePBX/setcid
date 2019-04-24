@@ -1,5 +1,5 @@
 <?php
-$setcid_list = \FreePBX::Setcid()->getAll();
+$setcid_list = \FreePBX::Setcid()->listAll();
 if($setcid_list){
 	$setcid_descriptions = array();
         	foreach($setcid_list as $tmp_setcid){
