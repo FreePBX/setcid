@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>15.0.4</version>
+    <version>15.0.5</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -23,6 +23,7 @@
         </table>
     </database>
     <changelog>
+		*15.0.5* FREEPBX-19840 Set CallerID module allows to create duplicate entries with same Description. 
 		*15.0.4* Fixing FREEPBX-17867 
         *15.0.3* FREEPBX-19418
 		*15.0.2.2* fixing legacy restore
