@@ -5,7 +5,7 @@ class Restore Extends Base\RestoreBase{
 	public function runRestore(){
 		$configs = $this->getConfigs();
 		foreach($configs as $config){
-				$this->FreePBX->Setcid->update($config['cid_id'], $config['description'], $config['name'], $config['number'], $config['dest']);
+				$this->FreePBX->Setcid->update($config['cid_id'], $config['description'], $config['cid_name'], $config['cid_num'], $config['dest']);
 		}
 	}
 
