@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>15.0.7</version>
+    <version>15.0.8</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -23,6 +23,7 @@
         </table>
     </database>
     <changelog>
+		*15.0.8* FREEPBX-20567 Restoring FreePBX 15 Backup is not restoring CallerID Name and CallerID Number values of Set CallerID entries. 
 		*15.0.7* Related to FREEPBX-20414: removed $jobid from runRestore() 
         	*15.0.6* FREEPBX-20046
         	*15.0.4* FREEPBX-19418
