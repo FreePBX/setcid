@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>15.0.8</version>
+    <version>16.0.1</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -23,21 +23,12 @@
         </table>
     </database>
     <changelog>
-		*15.0.8* FREEPBX-20567 Restoring FreePBX 15 Backup is not restoring CallerID Name and CallerID Number values of Set CallerID entries. 
-		*15.0.7* Related to FREEPBX-20414: removed $jobid from runRestore() 
-        	*15.0.6* FREEPBX-20046
-        	*15.0.4* FREEPBX-19418
-		*15.0.5* FREEPBX-19840 Set CallerID module allows to create duplicate entries with same Description. 
-		*15.0.4* Fixing FREEPBX-17867 
-        	*15.0.3* FREEPBX-19418
-		*15.0.2.2* fixing legacy restore
-		*15.0.2* Packaging of ver 15.0.2
-	        *15.0.1* Backup 15
+		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
     <depends>
         <version>13.0.191.12</version>
     </depends>
     <supported>
-        <version>15.0</version>
+        <version>16.0</version>
     </supported>
 </module>
