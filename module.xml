@@ -10,6 +10,7 @@
 	<description>
 		Adds the ability to change the CallerID within a call flow.
 	</description>
+  	<more-info>https://wiki.freepbx.org/display/FPG/Set+CallerID+Module</more-info>
 	<menuitems>
 		<setcid needsenginedb="yes">Set CallerID</setcid>
 	</menuitems>
