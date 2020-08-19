@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>15.0.8</version>
+    <version>15.0.9</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -10,6 +10,7 @@
     <description>
         Adds the ability to change the CallerID within a call flow.
     </description>
+    <more-info>https://wiki.freepbx.org/display/FPG/Set+CallerID+Module</more-info>
     <menuitems>
         <setcid needsenginedb="yes">Set CallerID</setcid>
     </menuitems>
@@ -23,6 +24,7 @@
         </table>
     </database>
     <changelog>
+		*15.0.9* Packaging of ver 15.0.9
 		*15.0.8* FREEPBX-20567 Restoring FreePBX 15 Backup is not restoring CallerID Name and CallerID Number values of Set CallerID entries. 
 		*15.0.7* Related to FREEPBX-20414: removed $jobid from runRestore() 
         	*15.0.6* FREEPBX-20046
