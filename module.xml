@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>16.0.1</version>
+    <version>16.0.2</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -10,6 +10,7 @@
     <description>
         Adds the ability to change the CallerID within a call flow.
     </description>
+    <more-info>https://wiki.freepbx.org/display/FPG/Set+CallerID+Module</more-info>
     <menuitems>
         <setcid needsenginedb="yes">Set CallerID</setcid>
     </menuitems>
@@ -23,6 +24,7 @@
         </table>
     </database>
     <changelog>
+		*16.0.2* Packaging of ver 16.0.2
 		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
     <depends>
