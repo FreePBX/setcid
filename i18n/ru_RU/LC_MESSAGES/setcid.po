@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-28 08:07+0530\n"
-"PO-Revision-Date: 2021-11-23 08:01+0000\n"
+"PO-Revision-Date: 2021-12-07 07:32+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/setcid/"
 "ru/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: assets/js/setcid.js:9
 msgid " already used, please use a different Description."
-msgstr ""
+msgstr " уже используется, пожалуйста, используйте другое описание."
 
 #: views/grid.php:18
 msgid "Actions"
@@ -88,15 +88,15 @@ msgstr "Редактировать CID: %s"
 
 #: views/rnav.php:3
 msgid "List SetCID"
-msgstr ""
+msgstr "Список SetCID"
 
 #: assets/js/setcid.js:6
 msgid "Please enter a valid Description."
-msgstr ""
+msgstr "Пожалуйста, введите действительное описание."
 
 #: assets/js/setcid.js:13
 msgid "Please select an item."
-msgstr ""
+msgstr "Пожалуйста, выберите элемент."
 
 #: Setcid.class.php:120
 msgid "Reset"
@@ -117,7 +117,7 @@ msgstr "Установить CallerID %s: "
 
 #: views/rnav.php:14
 msgid "SetCID"
-msgstr ""
+msgstr "УстCID"
 
 #: Setcid.class.php:125
 msgid "Submit"
