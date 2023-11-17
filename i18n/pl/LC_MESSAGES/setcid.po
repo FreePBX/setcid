@@ -10,39 +10,43 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-19 10:34+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-11-17 16:10+0000\n"
+"Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
+"Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/setcid/pl/"
+">\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: assets/js/setcid.js:9
 msgid " already used, please use a different Description."
-msgstr ""
+msgstr " już w użyciu, proszę użyć innego opisu."
 
 #: views/grid.php:18
 msgid "Actions"
-msgstr ""
+msgstr "Działania"
 
 #: views/grid.php:12
 #: views/rnav.php:2
 msgid "Add"
-msgstr ""
+msgstr "Dodaj"
 
 #: views/form.php:21
 msgid "Add CID"
-msgstr ""
+msgstr "Dodaj CID"
 
 #: setcid.i18n.php:8
 #: views/grid.php:8
 msgid "Adds the ability to change the CallerID within a call flow."
-msgstr ""
+msgstr "Dodaje możliwość zmiany Identyfikatora dzwoniącego w trakcie callflow."
 
 #: setcid.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacje"
 
 #: views/form.php:83
 msgid ""
@@ -51,74 +55,80 @@ msgid ""
 "appropriate variables. If you leave this box blank, the caller ID number "
 "will be blank. Default caller ID number variable: ${CALLERID(num)}"
 msgstr ""
+"Numer identyfikacyjny dzwoniącego: Numer identyfikacyjny dzwoniącego "
+"zostanie zmieniony na wpisany tu. Jeżeli dodajesz coś do bieżącego numeru "
+"identyfikacyjnego rozmówcy, nie zapomnij o dołączeniu odpowiednich "
+"zmiennych. Jeśli pozostawisz to pole puste, numer identyfikacyjny "
+"dzwoniącego będzie pusty. Domyślna zmienna numeru identyfikacyjnego "
+"dzwoniącego: ${CALLERID(num)}"
 
 #: views/form.php:53
 msgid "CallerID Name"
-msgstr ""
+msgstr "Nazwa Id dzwoniącego"
 
 #: views/form.php:73
 msgid "CallerID Number"
-msgstr ""
+msgstr "Numer Id dzwoniącego"
 
 #: Setcid.class.php:115
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: views/form.php:33
 #: views/grid.php:17
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: views/form.php:93
 msgid "Destination"
-msgstr ""
+msgstr "Cel"
 
 #: views/form.php:103
 msgid "Destination to send the call to after CID has been processed"
-msgstr ""
+msgstr "Cel, do którego należy przekazać połączenie po przeprocesowaniu CID"
 
 #: views/form.php:21
 #, php-format
 msgid "Edit CID: %s"
-msgstr ""
+msgstr "Edytuj CID: %s"
 
 #: views/rnav.php:3
 msgid "List SetCID"
-msgstr ""
+msgstr "Lista SetCID"
 
 #: assets/js/setcid.js:6
 msgid "Please enter a valid Description."
-msgstr ""
+msgstr "Proszę o wpisanie poprawnego opisu"
 
 #: assets/js/setcid.js:13
 msgid "Please select an item."
-msgstr ""
+msgstr "Proszę wybrać element"
 
 #: Setcid.class.php:120
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 #: views/main.php:4
 msgid "Set CID"
-msgstr ""
+msgstr "Ustaw CID"
 
 #: setcid.i18n.php:4
 #: setcid.i18n.php:10
 msgid "Set CallerID"
-msgstr ""
+msgstr "Ustaw CallerID"
 
 #: functions.inc.php:103
 #, php-format
 msgid "Set CallerID %s: "
-msgstr ""
+msgstr "Ustaw CallerID %s: "
 
 #: views/rnav.php:14
 msgid "SetCID"
-msgstr ""
+msgstr "UstawCID"
 
 #: Setcid.class.php:125
 msgid "Submit"
-msgstr ""
+msgstr "Wyślij"
 
 #: views/form.php:63
 msgid ""
@@ -127,12 +137,16 @@ msgid ""
 "If you leave this box blank, the caller ID name will be blank. Default "
 "caller ID name variable: ${CALLERID(name)}"
 msgstr ""
+"Nazwa identyfikatora dzwoniącego zostanie zmieniona na tę wpisaną tu. Jeśli "
+"dodajesz nazwę bieżącego rozmówcy, nie zapomnij o dołączeniu odpowiednich "
+"zmiennych. Jeśli pozostawisz to pole puste, nazwa dzwoniącego będzie pusta. "
+"Domyślna zmienna nazwy dzwoniącego: ${CALLERID(name)}"
 
 #: views/form.php:43
 msgid ""
 "The descriptive name of this CallerID instance. For example \"new name here\""
-msgstr ""
+msgstr "Opisowa nazwa tej instancji CallerID. Na przykład „tutaj nowa nazwa”"
 
 #: views/grid.php:4
 msgid "What is Set CID?"
-msgstr ""
+msgstr "Co to jest ustawienie CID"
