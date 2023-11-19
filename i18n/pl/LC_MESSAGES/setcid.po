@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-19 10:34+0000\n"
-"PO-Revision-Date: 2023-11-17 16:10+0000\n"
+"PO-Revision-Date: 2023-11-20 01:00+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/setcid/pl/"
 ">\n"
@@ -98,11 +98,11 @@ msgstr "Lista SetCID"
 
 #: assets/js/setcid.js:6
 msgid "Please enter a valid Description."
-msgstr "Proszę o wpisanie poprawnego opisu"
+msgstr "Wprowadź prawidłowy opis."
 
 #: assets/js/setcid.js:13
 msgid "Please select an item."
-msgstr "Proszę wybrać element"
+msgstr "Wybierz przedmiot."
 
 #: Setcid.class.php:120
 msgid "Reset"
@@ -149,4 +149,4 @@ msgstr "Opisowa nazwa tej instancji CallerID. Na przykład „tutaj nowa nazwa�
 
 #: views/grid.php:4
 msgid "What is Set CID?"
-msgstr "Co to jest ustawienie CID"
+msgstr "Co to jest ustawienie CID?"
