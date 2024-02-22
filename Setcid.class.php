@@ -85,7 +85,7 @@ class Setcid extends FreePBX_Helpers implements BMO {
 		return !empty($results) ? $results : array();
 	}
 
-	public function update($id=null, $description, $name, $number, $dest) {
+	public function update($id, $description, $name, $number, $dest) {
 		$sql = "REPLACE INTO setcid (cid_id, description, cid_name, cid_num, dest) VALUES (?, ?, ?, ?, ?)";
 		$sth = $this->Database->prepare($sql);
 		return $sth->execute(array($id, $description, $name, $number, $dest));
