@@ -2,7 +2,7 @@
     <rawname>setcid</rawname>
     <repo>standard</repo>
     <name>Set CallerID</name>
-    <version>16.0.3</version>
+    <version>17.0.1</version>
     <category>Applications</category>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
@@ -24,14 +24,12 @@
         </table>
     </database>
     <changelog>
-		*16.0.3* Packaging of ver 16.0.3
-		*16.0.2* Packaging of ver 16.0.2
-		*16.0.1alpha* 16.0.1 alpha release
+		*17.0.1* 17.0.1  release
 	</changelog>
     <depends>
-        <version>13.0.191.12</version>
+        <version>17.0.1</version>
     </depends>
     <supported>
-        <version>16.0</version>
+        <version>17.0</version>
     </supported>
 </module>
