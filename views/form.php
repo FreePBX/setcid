@@ -3,7 +3,7 @@ $setcid_list = \FreePBX::Setcid()->listAll();
 if($setcid_list){
 	$setcid_descriptions = array();
         	foreach($setcid_list as $tmp_setcid){
-                	if($item['cid_id'] !=  $tmp_setcid['cid_id']){
+					if((isset($item['cid_id']) && isset($tmp_setcid['cid_id'])) && $item['cid_id'] !=  $tmp_setcid['cid_id']){
                         	$setcid_descriptions[] = $tmp_setcid['description'];
                 	}
 		}
